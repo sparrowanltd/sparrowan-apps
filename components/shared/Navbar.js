@@ -11,9 +11,9 @@ export default function Navbar() {
                     <Link href='/service'>Service</Link >
                     <Link href='/projects'>Projects</Link >
                     <Link href='/protfolio'>Protfolio</Link >
-                    <Link href='/career'>Career</Link >
+                    <Link href='/career' >Career</Link >
                 </ul>
-                <Link href='/contact-us'>Contact us</Link >
+                <Link href='/contact-us' className="bg-[#FF6B00] px-5 rounded ">Contact us</Link >
             </header>
         </>
     )
