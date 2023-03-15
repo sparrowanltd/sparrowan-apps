@@ -21,7 +21,7 @@
     background-clip: initial;
 }
 
-.banner_button{
+.banner_button {
     background: linear-gradient(90deg, #FF6B00 0%, rgba(255, 206, 49, 0.93) 100%);
     border-radius: 5px;
 }
