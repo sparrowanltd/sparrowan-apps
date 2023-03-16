@@ -32,7 +32,7 @@ export default function SwiperSlideContent({ item, deretion, slideInfo }) {
                 {
                     slideInfo?.map(data => {
                         return (
-                            <SwiperSlide className="">
+                            <SwiperSlide key={data?._id} className="">
                                 <Link href='/'>
                                     <Image src={data?.icon} width="100" height="100" alt="imges" />
                                 </Link>

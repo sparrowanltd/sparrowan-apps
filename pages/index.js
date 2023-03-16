@@ -13,50 +13,62 @@ export default function Home() {
 
   const slideInfo = [
     {
+      _id:1,
       link: "/",
       icon: xmVhugy5mnBZgI7ie,
     },
     {
+      _id:2,
       link: "/",
       icon: AAA,
     },
     {
+      _id:3,
       link: "/",
       icon: iso,
     },
     {
+      _id:4,
       link: "/",
       icon: certificate,
     },
     {
+      _id:5,
       link: "/",
       icon: naid,
     },
     {
+      _id:6,
       link: "/",
       icon: unnamed,
     },
     {
+      _id:7,
       link: "/",
       icon: xmVhugy5mnBZgI7ie,
     },
     {
+      _id:8,
       link: "/",
       icon: AAA,
     },
     {
+      _id:9,
       link: "/",
       icon: iso,
     },
     {
+      _id:10,
       link: "/",
       icon: certificate,
     },
     {
+      _id:11,
       link: "/",
       icon: naid,
     },
     {
+      _id:12,
       link: "/",
       icon: unnamed,
     },

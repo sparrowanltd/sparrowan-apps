@@ -13,7 +13,7 @@ export default function Footer() {
     return (
         <>
             <footer
-                className="bg-[#000] text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+                className="bg-red-500 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
                 
                 <div className="px-20 py-10 text-center md:text-left">
                     <div className=" flex justify-between ">
