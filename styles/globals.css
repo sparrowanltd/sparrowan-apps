@@ -42,3 +42,10 @@
 .nav_bar a:hover {
     color: #FF6B00;
 }
+
+.downZindex{
+    z-index: 1 !important;
+}
+.upZindex{
+    z-index: 1 !important;
+}

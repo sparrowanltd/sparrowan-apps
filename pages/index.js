@@ -8,67 +8,69 @@ import naid from '../assets/naid.png';
 import unnamed from '../assets/unnamed.png';
 import Link from "next/link";
 import SwiperSlideContent from "@/components/shared/SwiperSlide";
+import OurProducts from "@/components/shared/product/ourProducts";
+import Partners from "@/components/shared/Clients/Partners";
 
 export default function Home() {
 
   const slideInfo = [
     {
-      _id:1,
+      _id: 1,
       link: "/",
       icon: xmVhugy5mnBZgI7ie,
     },
     {
-      _id:2,
+      _id: 2,
       link: "/",
       icon: AAA,
     },
     {
-      _id:3,
+      _id: 3,
       link: "/",
       icon: iso,
     },
     {
-      _id:4,
+      _id: 4,
       link: "/",
       icon: certificate,
     },
     {
-      _id:5,
+      _id: 5,
       link: "/",
       icon: naid,
     },
     {
-      _id:6,
+      _id: 6,
       link: "/",
       icon: unnamed,
     },
     {
-      _id:7,
+      _id: 7,
       link: "/",
       icon: xmVhugy5mnBZgI7ie,
     },
     {
-      _id:8,
+      _id: 8,
       link: "/",
       icon: AAA,
     },
     {
-      _id:9,
+      _id: 9,
       link: "/",
       icon: iso,
     },
     {
-      _id:10,
+      _id: 10,
       link: "/",
       icon: certificate,
     },
     {
-      _id:11,
+      _id: 11,
       link: "/",
       icon: naid,
     },
     {
-      _id:12,
+      _id: 12,
       link: "/",
       icon: unnamed,
     },
@@ -99,6 +101,13 @@ export default function Home() {
       </main>
       <section className="p-20">
         <SwiperSlideContent item={7} deretion={1000} slideInfo={slideInfo} />
+      </section>
+      {/*  our products handle */}
+      <section className="mb-10">
+        <OurProducts />
+      </section>
+      <section className="p-20">
+        <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
 
     </>
