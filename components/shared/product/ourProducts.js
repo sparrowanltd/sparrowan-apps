@@ -12,7 +12,7 @@ export default function OurProducts() {
                 <section>
                     <div className="flex justify-center  items-center">
                         <Text className="" position="flex" title={[{ text: "Our" }, { text: "Products", color: "FF6B00" }]} />
-                        <Image className="ml-[-20px] " src={Ellipse} width={100} height={100} />
+                        <Image className="ml-[-20px] " src={Ellipse} width={100} height={100} alt=""/>
                     </div>
                     {/* =============== content are  ===============  */}
                     <div className="grid grid-cols-12 items-center gap-10 mt-10">

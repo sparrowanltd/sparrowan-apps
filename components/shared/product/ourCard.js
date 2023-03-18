@@ -12,7 +12,7 @@ export default function OurCards({bgColor,cols,title,paragraph,image}) {
                     </p>
                 </div>
                 <div className="mx-auto col-span-5">
-                    <Image className="w-[400px] h-100" src={image} width={100} height={100} />
+                    <Image className="w-[400px] h-100" src={image} width={100} height={100} alt=""/>
                 </div>
             </div>
         </div>
