@@ -3,7 +3,7 @@ import Text from "../text/Text";
 
 export default function OurCards({bgColor,cols,title,paragraph,image}) {
     return (
-        <div className={`${cols} bg-[#${bgColor}] p-4 rounded-lg`}>
+        <div className={`${cols} ${bgColor} p-4 rounded-lg`}>
             <div className="grid grid-cols-12 items-center gap-10 ">
                 <div className="col-span-7">
                     <Text className="text-black" title={[{ text: title }]} />

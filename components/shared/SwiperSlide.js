@@ -7,27 +7,20 @@ import 'swiper/css/navigation';
 import Link from "next/link";
 import Image from "next/image";
 
-export default function SwiperSlideContent({ item, deretion, slideInfo }) {
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (time, progress) => {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
-        progressContent.current.textContent = `${Math.ceil(time / 1000)}`;
-    };
+export default function SwiperSlideContent({ item, direction, deretion, slideInfo }) {
+
     return (
         <>
             <Swiper
                 slidesPerView={item}
                 autoplay={{
                     delay: deretion,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
+                    disableOnInteraction: true,
+                    reverseDirection: direction,
+                    pauseOnMouseEnter: true,
+
                 }}
                 modules={[Autoplay]}
-                onAutoplayTimeLeft={onAutoplayTimeLeft}
-                className="mySwiper"
             >
                 {
                     slideInfo?.map(data => {
@@ -40,12 +33,6 @@ export default function SwiperSlideContent({ item, deretion, slideInfo }) {
                         )
                     })
                 }
-
-                <div className="autoplay-progress " slot="container-end">
-
-                    <span ref={progressCircle} className="hidden "></span>
-                    <span ref={progressContent} className="hidden "></span>
-                </div>
 
             </Swiper>
         </>

@@ -5,11 +5,23 @@ import AAA from '../assets/AAA-logo-2021-ENG-transparent.png';
 import iso from '../assets/iso-certified.png';
 import certificate from '../assets/certificate-logos-2-05.png';
 import naid from '../assets/naid.png';
-import unnamed from '../assets/unnamed.png';
+import stodio1 from '../assets/stodio1.png';
+import stodio2 from '../assets/stodio2.png';
+import stodio3 from '../assets/stodio3.png';
+import stodio4 from '../assets/stodio4.png';
+import stodio5 from '../assets/stodio5.png';
+import stodio6 from '../assets/stodio6.png';
+import stodio7 from '../assets/stodio7.png';
+import stodio8 from '../assets/stodio8.png';
+import stodio9 from '../assets/stodio9.png';
+import stodio10 from '../assets/stodio10.png';
 import Link from "next/link";
 import SwiperSlideContent from "@/components/shared/SwiperSlide";
 import OurProducts from "@/components/shared/product/ourProducts";
 import Partners from "@/components/shared/Clients/Partners";
+import Studio from "@/components/shared/Studio";
+import OurServices from "@/components/shared/services/OurServices";
+/* Studio */
 
 export default function Home() {
 
@@ -39,11 +51,7 @@ export default function Home() {
       link: "/",
       icon: naid,
     },
-    {
-      _id: 6,
-      link: "/",
-      icon: unnamed,
-    },
+    
     {
       _id: 7,
       link: "/",
@@ -69,15 +77,65 @@ export default function Home() {
       link: "/",
       icon: naid,
     },
+  ]
+  const slideInfos = [
     {
-      _id: 12,
+      _id: 1,
       link: "/",
-      icon: unnamed,
+      icon: stodio1,
+    },
+    {
+      _id: 2,
+      link: "/",
+      icon: stodio2,
+    },
+    {
+      _id: 3,
+      link: "/",
+      icon: stodio3,
+    },
+    {
+      _id: 4,
+      link: "/",
+      icon: stodio4,
+    },
+    {
+      _id: 5,
+      link: "/",
+      icon: stodio5,
+    },
+    {
+      _id: 6,
+      link: "/",
+      icon: stodio6,
+    },
+    {
+      _id: 7,
+      link: "/",
+      icon: stodio7,
+    },
+    {
+      _id: 8,
+      link: "/",
+      icon: stodio8,
+    },
+    {
+      _id: 9,
+      link: "/",
+      icon: stodio9,
+    },
+    {
+      _id: 10,
+      link: "/",
+      icon: stodio10,
     },
   ]
 
   return (
     <>
+
+
+
       <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
           <div className="px-20 pt-[166px] text-white">
@@ -100,15 +158,23 @@ export default function Home() {
         </section>
       </main>
       <section className="p-20">
-        <SwiperSlideContent item={7} deretion={1000} slideInfo={slideInfo} />
+        <SwiperSlideContent item={7} deretion={1000} direction={false} slideInfo={slideInfo} />
       </section>
       {/*  our products handle */}
       <section className="mb-10">
         <OurProducts />
       </section>
       <section className="p-20">
+        <Studio slideInfo={slideInfos} />
+      </section>
+      <section>
+        <OurServices />
+      </section>
+
+      <section className="p-20">
         <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
+
 
     </>
   )

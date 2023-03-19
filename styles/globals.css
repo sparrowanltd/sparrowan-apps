@@ -43,9 +43,16 @@
     color: #FF6B00;
 }
 
-.downZindex{
+.downZindex {
     z-index: 1 !important;
 }
-.upZindex{
+
+.upZindex {
     z-index: 1 !important;
+}
+
+/*  service_sction */
+.service_section{
+    box-shadow: 5px 10px 20px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
 }

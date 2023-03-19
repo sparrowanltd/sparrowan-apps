@@ -12,7 +12,7 @@ export default function OurProducts() {
                 <section>
                     <div className="flex justify-center  items-center">
                         <Text className="" position="flex" title={[{ text: "Our" }, { text: "Products", color: "FF6B00" }]} />
-                        <Image className="ml-[-20px] " src={Ellipse} width={100} height={100} alt=""/>
+                        <Image className="ml-[-20px] " src={Ellipse} width={100} height={100} alt="" />
                     </div>
                     {/* =============== content are  ===============  */}
                     <div className="grid grid-cols-12 items-center gap-10 mt-10">
@@ -27,7 +27,7 @@ export default function OurProducts() {
                             </div>
                         </div>
                         <OurCards
-                            bgColor="A6CEE3"
+                            bgColor='bg-[#A6CEE3]'
                             cols="col-span-7"
                             title="ERP Solution"
                             paragraph="ERP software is a management system that connects apps to assist businesses in enhancing their operations, communication, and cooperation. Sales, order processing, finance, human resources, planning, manufacturing, inventory, procurement, and other activities are all streamlined by an ERP software system."
@@ -38,14 +38,14 @@ export default function OurProducts() {
                 </section>
                 <section className="grid grid-cols-2 items-center gap-10 mt-10">
                     <OurCards
-                        bgColor="1F78B4"
+                        bgColor='bg-[#1F78B4]'
                         title="GYM Apps"
                         paragraph="There’s more to health than fitness. While you’ll find a ton of new ways to get active, like AntiGravity Fitness, barre, and HIIT, you’ll get so much more than that.
                         Enjoy contemporary food and drink at the Catalyst Restaurant & Lounge, connect with friends in our social lounge, or quiet your mind in a meditation pod. Altea Active is here for all of you."
                         image={pc}
                     />
                     <OurCards
-                        bgColor="7879F1"
+                        bgColor='bg-[#7879F1]'
                         title="Yoga Apps"
                         paragraph="There’s more to health than fitness. While you’ll find a ton of new ways to get active, like AntiGravity Fitness, barre, and HIIT, you’ll get so much more than that.
                         Enjoy contemporary food and drink at the Catalyst Restaurant & Lounge, connect with friends in our social lounge, or quiet your mind in a meditation pod. Altea Active is here for all of you."
