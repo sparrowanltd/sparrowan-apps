@@ -6,7 +6,7 @@ export default function Technologies() {
         <>
             <main className="py-10">
                 <Text position="flex" title={[{ text: "Technologies", color: "FF6B00" }, { text: "We Work With" }]} />
-                <div class="grid grid-cols-6 gap-10 mt-10">
+                <div class="grid grid-cols-3 gap-10 mt-10">
                     <TechnologiesCard image={reactjs} title="React js " />
                     <TechnologiesCard image={reactjs} title="React js " />
                     <TechnologiesCard image={reactjs} title="React js " />
