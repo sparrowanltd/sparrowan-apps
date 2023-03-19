@@ -21,6 +21,10 @@ import OurProducts from "@/components/shared/product/ourProducts";
 import Partners from "@/components/shared/Clients/Partners";
 import Studio from "@/components/shared/Studio";
 import OurServices from "@/components/shared/services/OurServices";
+import DegitalMarketing from "@/components/shared/degitalMarketing/DegitalMarketing";
+import Technologies from "@/utils/technologies/Technologies";
+import TechnologiesCard from "@/utils/technologies/TechnologiesCard";
+import Review from "@/components/shared/Clients/Review";
 /* Studio */
 
 export default function Home() {
@@ -51,7 +55,7 @@ export default function Home() {
       link: "/",
       icon: naid,
     },
-    
+
     {
       _id: 7,
       link: "/",
@@ -174,7 +178,13 @@ export default function Home() {
       <section className="p-20">
         <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
-
+      <section className="p-20">
+        <DegitalMarketing />
+      </section>
+      <section className="bg-[#000]">
+        <Technologies />
+      </section>
+      <Review />
 
     </>
   )
