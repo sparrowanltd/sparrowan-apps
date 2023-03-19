@@ -184,7 +184,13 @@ export default function Home() {
       <section className="bg-[#000]">
         <Technologies />
       </section>
-      <Review />
+      <section
+        className="p-20"
+      >
+        <Review item={3} deretion={2000} slideInfo={slideInfo} />
+
+
+      </section>
 
     </>
   )

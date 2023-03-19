@@ -52,11 +52,17 @@
 }
 
 /*  service_sction */
-.service_section{
+.service_section {
     box-shadow: 5px 10px 20px 8px rgba(255, 255, 255, 0.25);
     border-radius: 10px;
 }
-.digital_section{
+
+.digital_section {
     box-shadow: inset 4px 1px 8px #000000;
     border-radius: 21px;
+}
+
+.review_section {
+    box-shadow: 0px 2px 12px rgba(255, 143, 11, 0.59);
+    border-radius: 10px
 }
