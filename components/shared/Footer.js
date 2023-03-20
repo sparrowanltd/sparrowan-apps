@@ -13,13 +13,13 @@ export default function Footer() {
     return (
         <>
             <footer
-                className="bg-[#000000] text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+                className="bg-[#000000] text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
                 
-                <div className="px-20 py-10 text-center md:text-left">
-                    <div className=" flex justify-between ">
+                <div className="px-5 md:px-20 py-10  md:text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-3 justify-between">
                         <div className="">
                             <h1
-                                className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                                className="mb-4 flex items-center  font-semibold uppercase justify-start">
                                 <Link href='/'> <Image src={logo} className="w-100" width="" height="" alt="Logo" placeholder="blur" /></Link >
                             </h1>
                             <div className="">
@@ -51,7 +51,7 @@ export default function Footer() {
 
                         <div className="">
                             <h1
-                                className="mb-4 mt-10 flex justify-center text-xl font-semibold text-[#FF6B00] md:justify-start">
+                                className="mb-4 mt-10 flex  text-xl font-semibold text-[#FF6B00] justify-start">
                                 Company Info
                             </h1>
 
@@ -101,7 +101,7 @@ export default function Footer() {
                         </div>
                         <div>
                             <h1
-                                className="mb-4 mt-10 flex justify-center text-xl font-semibold text-[#FF6B00] md:justify-start">
+                                className="mb-4 mt-10 flex  text-xl font-semibold text-[#FF6B00] justify-start">
                                 Get In Touch
                             </h1>
                             <div className="mt-8">
@@ -148,12 +148,12 @@ export default function Footer() {
                     </div>
                     {/*  */}
                     <hr className="my-6" />
-                    <div className="flex justify-between items-center text-white ">
+                    <div className="md:flex justify-between items-center text-white ">
                         <p className="text-sm">© 2022 – Sparrowan LLC | All Rights Reserved | Serving clients since 2019
                         <br />
                             Terms of Service | Privacy Policy
                         </p>
-                        <ul className="flex justify-between items-center gap-5">
+                        <ul className="mt-10 md:mt-10 flex justify-between items-center gap-5">
                             <li><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
                             <li><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
                             <li><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
