@@ -8,18 +8,18 @@ import Button from "../button/Button";
 export default function OurProducts() {
     return (
         <>
-            <main className="bg-[#000000] p-20 text-white">
+            <main className="bg-[#000000] p-5 lg:p-20 text-white">
                 <section>
                     <div className="flex justify-center  items-center">
                         <Text className="" position="flex" title={[{ text: "Our" }, { text: "Products", color: "FF6B00" }]} />
                         <Image className="ml-[-20px] " src={Ellipse} width={100} height={100} alt="" />
                     </div>
                     {/* =============== content are  ===============  */}
-                    <div className="grid grid-cols-12 items-center gap-10 mt-10">
-                        <div className="col-span-5 p-4 text-sm">
-                            <div className="flex">
-                                <div className="rotate-90 ml-[-115px]">
-                                    <Text position="flex" title={[{ text: "5+", color: "FF6B00" }, { text: "Products" }]} />
+                    <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10 mt-10">
+                        <div className="col-span-5  p-4 text-sm">
+                            <div className="w-100 mx-auto text-center lg:text-start lg:flex">
+                                <div className="lg:rotate-90 lg:ml-[-115px] ">
+                                    <Text  position="flex" title={[ { text: "5+", color: "FF6B00" },{ text: "Products" }]} />{/* { text: "5+", color: "FF6B00" }, */}
                                 </div>
                                 <p>
                                     Buy Affordable Software Products to meet your wants. We innovate and enhance your digital recognition with sustainable and adaptable solutions in every possible way! Find your desirable products from here.
@@ -36,7 +36,7 @@ export default function OurProducts() {
 
                     </div>
                 </section>
-                <section className="grid grid-cols-2 items-center gap-10 mt-10">
+                <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mt-10">
                     <OurCards
                         bgColor='bg-[#1F78B4]'
                         title="GYM Apps"

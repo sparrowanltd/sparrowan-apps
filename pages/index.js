@@ -162,7 +162,7 @@ export default function Home() {
         </section>
       </main>
       <section className="p-5 md:p-20">
-        <SwiperSlideContent item={6} deretion={7000} direction={false} slideInfo={slideInfo} />
+        <SwiperSlideContent item={6} deretion={1000} direction={false} slideInfo={slideInfo} />
       </section>
 
       {/*  our products handle  */}
@@ -179,19 +179,20 @@ export default function Home() {
       <section className="p-5 md:p-20">
         <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
-      <section className="p-20">
+      <section className="p-5 md:p-20">
         <DegitalMarketing />
       </section>
+
       <section className="bg-[#000]">
         <Technologies />
       </section>
-      <section
-        className="p-20"
+
+      {/*  review secton bad  */}
+      {/*    <section
+        className="p-5 md:p-20"
       >
         <Review item={3} deretion={2000} slideInfo={slideInfo} />
-
-
-      </section>
+      </section> */}
       {/* 
       Skeleton 
       

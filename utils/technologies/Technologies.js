@@ -4,9 +4,9 @@ import reactjs from '../../assets/react-js-icon.png'
 export default function Technologies() {
     return (
         <>
-            <main className="py-10">
+            <main className="px-5 md:px-20 py-10">
                 <Text position="flex" title={[{ text: "Technologies", color: "FF6B00" }, { text: "We Work With" }]} />
-                <div class="grid grid-cols-3 gap-10 mt-10">
+                <div class="flex flex-wrap justify-between  gap-2 md:gap-10 mt-10">
                     <TechnologiesCard image={reactjs} title="React js " />
                     <TechnologiesCard image={reactjs} title="React js " />
                     <TechnologiesCard image={reactjs} title="React js " />

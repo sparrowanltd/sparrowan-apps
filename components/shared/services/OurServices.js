@@ -4,10 +4,10 @@ import Application from '../../../assets/mobile-application1.png'
 import ServiceCard from "./ServiceCard";
 export default function OurServices() {
     return (
-        <main className="bg-[#000000] p-20">
+        <main className="bg-[#000000] p-5 md:p-20">
             <Text position="flex" title={[{ text: "Our" }, { text: "Services", color: "FF6B00" }]} />
             {/*  ============  service card styles ============  */}
-            <section className="grid  grid-cols-3  gap-16 mt-10">
+            <section className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16 mt-10">
                 <div className=" bg-[#000] text-center p-2 rounded-md text-white service_section p-10">
                     <div className="flex justify-between items-center  gap-10">
                         <Text position="flex" title={[{ text: "17+", color: "FF6B00" }]} />
