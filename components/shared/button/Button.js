@@ -5,7 +5,7 @@ export default function Button({ title, bgColor, color, icon, extra, buttonwidth
     return (
         <>
             <Link href={link} className={`flex ${positin} items-center  py-1  ${bgColor} text-[${color}] ${buttonwidth} rounded`}>
-                <p className="text-xl font-bold">{title}</p>
+                <p className="text-md md:text-xl font-bold">{title}</p>
                 {/* <Link href={link} className="flex justify-center items-center gap-2" ></Link> */}
                 <Image src={icon} width="28" height="" alt="" />
             </Link>

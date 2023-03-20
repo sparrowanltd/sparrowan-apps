@@ -142,14 +142,14 @@ export default function Home() {
 
       <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
-          <div className="px-20 pt-[166px] text-white">
-            <h1 className="text-5xl font-bold">Sparrowan LLC <sapn className="text-[#FF6B00]">.</sapn></h1>
+          <div className="px-5 md:px-20 pt-[100px] md:pt-[166px] text-white">
+            <h1 className="text-4xl md:text-5xl font-bold">Sparrowan LLC <sapn className="text-[#FF6B00]">.</sapn></h1>
             <h2 className="my-[34px] font-semibold text-[#FF6B00]">Tune your technology</h2>
             <p className="mb-[66px]">
               Design & develop intelligent, innovative and sustainable technology <br /> solutions and services on multiple platforms.
             </p>
             <Button
-              buttonwidth="w-[300px]"
+              buttonwidth="w-[280px]"
               title="Start a Project"
               color="white"
               bgColor={"banner_button"}
@@ -161,24 +161,25 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <section className="p-20">
-        <SwiperSlideContent item={7} deretion={1000} direction={false} slideInfo={slideInfo} />
+      <section className="p-5 md:p-20">
+        <SwiperSlideContent item={6} deretion={1000} direction={false} slideInfo={slideInfo} />
       </section>
-      {/*  our products handle */}
-      <section className="mb-10">
+      
+     {/*  our products handle  */}
+      {/* <section className="mb-10">
         <OurProducts />
-      </section>
-      <section className="p-20">
+      </section> */}
+      <section  className="p-5 md:p-20">
         <Studio slideInfo={slideInfos} />
       </section>
-      <section>
+      {/* <section>
         <OurServices />
-      </section>
+      </section> */}
 
-      <section className="p-20">
+      <section  className="p-5 md:p-20">
         <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
-      <section className="p-20">
+     {/*  <section className="p-20">
         <DegitalMarketing />
       </section>
       <section className="bg-[#000]">
@@ -190,7 +191,8 @@ export default function Home() {
         <Review item={3} deretion={2000} slideInfo={slideInfo} />
 
 
-      </section>
+      </section> */}
+      
 
     </>
   )

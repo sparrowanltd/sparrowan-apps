@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <>
             <div style={{fontFamily:"Poppins"}}>
                 <Navbar />
-                {/* {children} */}
+                {children}
                 <Footer />
             </div>
         </>

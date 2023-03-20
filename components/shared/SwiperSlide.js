@@ -21,22 +21,38 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
 
                 }}
                 modules={[Autoplay]}
+                breakpoints={{
+                    // when window width is >= 640px
+                    320: {
+                        slidesPerView: 2,
+                    },
+                    // when window width is >= 768px
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    // when window width is >= 1024px
+                    1024: {
+                        slidesPerView: item,
+                    },
+                }}
+
             >
                 {
                     !review && slideInfo?.map(data => {
                         return (
-                            <SwiperSlide key={data?._id} className="">
+                            <SwiperSlide key={data?._id} >
                                 <Link href='/'>
-                                    <Image src={data?.icon} width="100" height="100" alt="imges" />
+                                    <Image src={data?.icon} className="mx-auto" width="100" height="100" alt="imges" />
                                 </Link>
                             </SwiperSlide>
                         )
                     })
                 }
+
                 {
                     review && slideInfo?.map(data => {
                         return (
-                            <SwiperSlide key={data?._id} className="">
+                            <SwiperSlide key={data?._id}>
                                 <div className="bg-white rounded-lg  p-6 review_section ">
                                     <div className="items-center mb-4">
                                         <img

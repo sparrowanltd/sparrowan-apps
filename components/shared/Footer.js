@@ -16,7 +16,7 @@ export default function Footer() {
                 className="bg-[#000000] text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
                 
                 <div className="px-5 md:px-20 py-10  md:text-left">
-                    <div className="grid grid-cols-1 md:grid-cols-3 justify-between">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:flex justify-between">
                         <div className="">
                             <h1
                                 className="mb-4 flex items-center  font-semibold uppercase justify-start">
