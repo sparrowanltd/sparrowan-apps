@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: "Poppins";
+}
+
+
+/* nav bar for pc */
+
+
+@media only screen and (max-width: 768px) {
+    .pc_navbar {
+        display: none;
+    }
+
+    .mobile_navbar {
+        display: block;
+    }
+}
+@media only screen and (min-width: 770px) {
+    .mobile_navbar {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* banner bg img handel  */
 .banner_bg_imges {
     background-image: url("../assets/marius-masalar-CyFBmFEsytU-unsplash\ 1.png");
@@ -36,10 +71,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: #FFFFFF;
 }
 
-.nav_bar a:hover {
+.nav_bar ul a:hover {
     color: #FF6B00;
 }
 
