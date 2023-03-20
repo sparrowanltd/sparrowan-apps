@@ -162,24 +162,24 @@ export default function Home() {
         </section>
       </main>
       <section className="p-5 md:p-20">
-        <SwiperSlideContent item={6} deretion={1000} direction={false} slideInfo={slideInfo} />
+        <SwiperSlideContent item={6} deretion={7000} direction={false} slideInfo={slideInfo} />
       </section>
-      
-     {/*  our products handle  */}
-      {/* <section className="mb-10">
+
+      {/*  our products handle  */}
+      <section className="mb-10">
         <OurProducts />
-      </section> */}
-      <section  className="p-5 md:p-20">
+      </section>
+      <section className="p-5 md:p-20">
         <Studio slideInfo={slideInfos} />
       </section>
-      {/* <section>
+      <section>
         <OurServices />
-      </section> */}
+      </section>
 
-      <section  className="p-5 md:p-20">
+      <section className="p-5 md:p-20">
         <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
-     {/*  <section className="p-20">
+      <section className="p-20">
         <DegitalMarketing />
       </section>
       <section className="bg-[#000]">
@@ -191,8 +191,12 @@ export default function Home() {
         <Review item={3} deretion={2000} slideInfo={slideInfo} />
 
 
-      </section> */}
+      </section>
+      {/* 
+      Skeleton 
       
+      */}
+
 
     </>
   )

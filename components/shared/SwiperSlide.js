@@ -53,7 +53,7 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                     review && slideInfo?.map(data => {
                         return (
                             <SwiperSlide key={data?._id}>
-                                <div className="bg-white rounded-lg  p-6 review_section ">
+                                <div className="bg-white rounded-lg  p-6 review_section w-[300px]">
                                     <div className="items-center mb-4">
                                         <img
                                             className="w-12 h-12 rounded-full mx-auto"
