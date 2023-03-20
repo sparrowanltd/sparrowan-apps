@@ -68,7 +68,7 @@ export default function Navbar() {
                 {/*  */}
                 {
                     open && <div data-aos="fade-right" className="absolute inset-0 bg-opacity-25 w-screen  h-screen bg-[#000000]">
-                        <div className="dark:bg-[#000000] px-5 bg-red-100 w-[425px] h-screen">
+                        <div className="dark:bg-[#000000] px-5 bg-red-100 w-[320px] h-screen">
                             <div className="flex justify-between items-center mb-5">
                                 <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" placeholder="blur" /></Link >
                                 <button  onClick={() => setOpen(!open)}><IoCloseSharp className="text-[#FF6B00] text-4xl" /></button >
