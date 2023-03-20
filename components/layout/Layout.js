@@ -5,7 +5,7 @@ export default function Layout({ children }) {
 
     return (
         <>
-            <div style={{fontFamily:"Poppins"}}>
+            <div style={{fontFamily:"Poppins"}} className="overflow-hidden">
                 <Navbar />
                 {children}
                 <Footer />
