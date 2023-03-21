@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const MessengerChat = () => {
     useEffect(() => {
         window.fbAsyncInit = function () {
