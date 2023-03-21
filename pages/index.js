@@ -164,6 +164,7 @@ export default function Home() {
         <marquee>
           <div className="flex gap-10">
             {
+
               slideInfo?.map(data => <Image src={data?.icon} width={100} height={100} alt="imges" />)
             }
           </div>

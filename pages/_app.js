@@ -6,6 +6,7 @@ import { ThemeProvider } from 'next-themes'
 import { useEffect } from 'react';
 import NextNProgress from 'nextjs-progressbar';
 export default function App({ Component, pageProps }) {
+
   useEffect(() => {
     AOS.init({
       easing: "ease-out-cubic",
