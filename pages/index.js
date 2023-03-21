@@ -25,6 +25,7 @@ import DegitalMarketing from "@/components/shared/degitalMarketing/DegitalMarket
 import Technologies from "@/utils/technologies/Technologies";
 import TechnologiesCard from "@/utils/technologies/TechnologiesCard";
 import Review from "@/components/shared/Clients/Review";
+import Image from "next/image";
 /* Studio */
 
 export default function Home() {
@@ -137,9 +138,6 @@ export default function Home() {
 
   return (
     <>
-
-
-
       <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
           <div className="px-5 md:px-20 pt-[100px] md:pt-[166px] text-white">
@@ -161,10 +159,16 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <section className="p-5 md:p-20">
-        <SwiperSlideContent item={6} deretion={1000} direction={false} slideInfo={slideInfo} />
-      </section>
 
+      <section className="p-5 md:p-20">
+        <marquee>
+          <div className="flex gap-10">
+            {
+              slideInfo?.map(data => <Image src={data?.icon} width={100} height={100} alt="imges" />)
+            }
+          </div>
+        </marquee>
+      </section>
       {/*  our products handle  */}
       <section className="mb-10">
         <OurProducts />
@@ -175,18 +179,15 @@ export default function Home() {
       <section>
         <OurServices />
       </section>
-
       <section className="p-5 md:p-20">
         <Partners item={5} deretion={2000} slideInfo={slideInfo} />
       </section>
       <section className="p-5 md:p-20">
         <DegitalMarketing />
       </section>
-
-      <section className="bg-[#000]">
+      <section className="bg-[#fff]">
         <Technologies />
       </section>
-
       {/*  review secton bad  */}
       {/*    <section
         className="p-5 md:p-20"

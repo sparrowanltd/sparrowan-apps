@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ThemeProvider } from 'next-themes'
 import { useEffect } from 'react';
-
+import NextNProgress from 'nextjs-progressbar';
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
@@ -16,10 +16,9 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <Layout>
+        <NextNProgress color="#FF6B00" />
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>
   )
-
-
 }
