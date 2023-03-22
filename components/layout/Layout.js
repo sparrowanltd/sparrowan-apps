@@ -6,7 +6,7 @@ import MessengerChat from "@/utils/messengerChat";
 export default function Layout({ children }) {
     return (
         <>
-            <div style={{ fontFamily: "Poppins" }} className="overflow-hidden">
+            <div className="w-[1500px] mx-auto overflow-hidden" style={{ fontFamily: "Poppins" }} >
                 <MessengerChat />
                 <Navbar />
                 {children}
