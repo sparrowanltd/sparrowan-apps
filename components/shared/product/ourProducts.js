@@ -19,7 +19,7 @@ export default function OurProducts() {
                     </div>
                     {/* =============== content are  ===============  */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10 mt-10">
-                        <div className="col-span-5  p-4 text-sm">
+                        <div className="col-span-7 md:col-span-5  p-4 text-sm  mx-auto">
                             <div className="w-100 mx-auto text-center lg:text-start lg:flex">
                                 <div className="lg:rotate-90 lg:ml-[-115px] ">
                                     <div className="flex justify-center items-center  gap-2">

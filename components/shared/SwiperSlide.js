@@ -71,11 +71,25 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
     
                     }}
                     modules={[EffectCoverflow,Autoplay]}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        320: {
+                            slidesPerView:1,
+                        },
+                        // when window width is >= 768px
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        // when window width is >= 1024px
+                        1024: {
+                            slidesPerView: item,
+                        },
+                    }}
                 >
                   {  slideInfo?.map(data => {
                         return (
                             <SwiperSlide key={data?._id}>
-                                <div className="bg-white rounded-lg  p-6 review_section w-[300px]">
+                                <div className="dark:text-white text-black rounded-lg  p-6 review_section w-[300px] mx-auto">
                                     <div className="items-center mb-4">
                                         <img
                                             className="w-12 h-12 rounded-full mx-auto"

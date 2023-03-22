@@ -6,7 +6,7 @@ export default function Technologies() {
         <>
             <main className="px-5 md:px-20 py-10">
                 <Text position="flex" title={[{ text: "Technologies", color: "FF6B00" }, { text: "We Work With" }]} />
-                <div className="flex flex-wrap justify-between  gap-2 md:gap-10 mt-10">
+                <div className="flex flex-wrap justify-center items-center  gap-10 mt-10">
                     <TechnologiesCard image={reactjs} title="React js " />
                     <TechnologiesCard image={reactjs} title="React js " />
                     <TechnologiesCard image={reactjs} title="React js " />
