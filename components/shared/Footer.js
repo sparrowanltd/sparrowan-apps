@@ -13,7 +13,7 @@ export default function Footer() {
     return (
         <>
             <footer
-                className="bg-[#000000] text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+                className="dark:bg-[#000000]  lg:text-left">
                 
                 <div className="px-5 md:px-20 py-10  md:text-left">
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:flex justify-between">
@@ -24,12 +24,12 @@ export default function Footer() {
                             </h1>
                             <div className="">
                                 <p
-                                    className="   text-[#FF6B00]    font-semibold ">
+                                    className="  text-[#FF6B00]    font-semibold ">
                                     USA
                                 </p>
                                 <br />
                                 <p
-                                    className="mb-4   text-white   r font-semibold ">
+                                    className="mb-4  font-semibold ">
                                     +1 (954) 449-5289
 
                                 </p>
@@ -37,14 +37,14 @@ export default function Footer() {
                                     className="mb-2  text-[#FF6B00]  font-semibold ">
                                     UK Office
                                 </p>
-                                <p className="mb-2 text-sm text-white ">275 New N Rd Ste 3087, <br />London N1 7AA</p>
-                                <p className="mb-4 text-sm text-white ">+44 (204) 5577-0819</p>
+                                <p className="mb-2 text-sm">275 New N Rd Ste 3087, <br />London N1 7AA</p>
+                                <p className="mb-4 text-sm  ">+44 (204) 5577-0819</p>
                                 <p
                                     className="mb-2  text-[#FF6B00]  font-semibold ">
                                     Dhaka Office
                                 </p>
-                                <p className="mb-2 text-sm text-white ">House # 193, Road # 2, Avenue # 3, <br />Mirpur, Dohs, Dhaka - 1216</p>
-                                <p className="mb-4 text-sm text-white ">+880 (17) 1555-9868</p>
+                                <p className="mb-2 text-sm  ">House # 193, Road # 2, Avenue # 3, <br />Mirpur, Dohs, Dhaka - 1216</p>
+                                <p className="mb-4 text-sm ">+880 (17) 1555-9868</p>
 
                             </div>
                         </div>
@@ -57,43 +57,43 @@ export default function Footer() {
 
                             <div className="mt-8">
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >About us</Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >  Our Stores </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     > Blog  </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >  Contact </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >  Support </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     > Payments  </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >  Career </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >  News </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     > Foundation</Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#" className="text-white dark:text-neutral-200"
+                                    <Link href="#" 
                                     >Site Map</Link >
                                 </p>
                             </div>
@@ -106,20 +106,20 @@ export default function Footer() {
                             </h1>
                             <div className="mt-8">
                                 <p className="mb-4">
-                                    <a href="#!" className="text-white dark:text-neutral-200"
+                                    <a href="#!" 
                                     >contact@sparrowan.com</a >
                                 </p>
                                 <p className="mb-4">
-                                    <a href="#!" className="text-white dark:text-neutral-200"
+                                    <a href="#!" 
                                     >hr@sparrowan.com</a >
                                 </p>
                                 <br />
                                 <p className="mb-4">
-                                    <a href="#!" className="text-white dark:text-neutral-200"
+                                    <a href="#!" 
                                     >+88 017 85693445</a >
                                 </p>
                                 <p className="mb-4">
-                                    <a href="#!" className="text-white dark:text-neutral-200"
+                                    <a href="#!" 
                                     >skype: sparrowan</a >
                                 </p>
                                 <br />
@@ -128,7 +128,7 @@ export default function Footer() {
                                     >Opening Hour</a >
                                 </p>
                                 <p className="mb-4">
-                                    <a href="#!" className="text-white dark:text-neutral-200"
+                                    <a href="#!" 
                                     >Monday - Friday</a >
                                 </p>
                                 <p className="mb-4">
@@ -136,7 +136,7 @@ export default function Footer() {
                                     >9:30 AM - 7:00 PM</a >
                                 </p>
                                 <p className="mb-4">
-                                    <a href="#!" className="text-white dark:text-neutral-200"
+                                    <a href="#!" 
                                     >Monday - Friday</a >
                                 </p>
                                 <p className="mb-4 flex">
@@ -148,21 +148,21 @@ export default function Footer() {
                     </div>
                     {/*  */}
                     <hr className="my-6" />
-                    <div className="md:flex justify-between items-center text-white ">
+                    <div className="md:flex justify-between items-center ">
                         <p className="text-sm">© 2022 – Sparrowan LLC | All Rights Reserved | Serving clients since 2019
                         <br />
                             Terms of Service | Privacy Policy
                         </p>
-                        <ul className="mt-10 md:mt-10 flex justify-between items-center gap-5">
-                            <li><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group4} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group5} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Line} width="30px" height="10px"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                        <ul className="mt-10 md:mt-10 flex justify-between items-center gap-2 md:gap-5  ">
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group4} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group5} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className=""><Link href='/'> <Image src={Line} width="30px" height="10px"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
                         </ul>
 
                     </div>

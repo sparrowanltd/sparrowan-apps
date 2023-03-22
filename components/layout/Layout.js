@@ -9,12 +9,8 @@ export default function Layout({ children }) {
             <div style={{ fontFamily: "Poppins" }} className="overflow-hidden">
                 <MessengerChat />
                 <Navbar />
-                {children}
+                {/* {children} */}
                 <Footer />
-                {/* <MessengerCustomerChat
-                    pageId="100356108528777"
-                    appId="4953855674652215"
-                /> */}
             </div>
         </>
 

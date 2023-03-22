@@ -42,7 +42,7 @@ export default function Navbar() {
     return (
         <>
             {/* laptop adn  pc mobile_navbar */}
-            <header className={`dark:bg-[#000000] pc_navbar  px-5 md:px-10  flex justify-between ${router?.asPath == '/' ? "items-end" : "items-center py-2"}   nav_bar`}>
+            <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-10  flex justify-between ${((router?.asPath == '/') && (theme == "dark")) ? "items-end" : "items-center py-2"}   nav_bar`}>
                 <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" placeholder="blur" /></Link >
                 <ul className="flex justify-between items-center md:gap-8 xl:gap-16 ">
                     <Link href='/'>Home</Link >
@@ -51,12 +51,12 @@ export default function Navbar() {
                     <Link href='/protfolio'>Protfolio</Link >
                     <Link href='/career' >Career</Link >
                 </ul>
-                <div className="flex gap-10">
-
+                <div className="flex items-center gap-10">
                     {darkMode}
                     <Link href='/contact-us' className="bg-[#FF6B00] px-5 rounded text-white ">Contact us</Link >
                 </div>
             </header>
+            {theme==="light" && <hr />}
             {/* moble  navbar  */}
             <header className="mobile_navbar">
 
@@ -68,10 +68,10 @@ export default function Navbar() {
                 {/*  */}
                 {
                     open && <div data-aos="fade-right" className="absolute inset-0 bg-opacity-25 w-screen  h-screen bg-[#000000]">
-                        <div className="dark:bg-[#000000] px-5 bg-red-100 w-[320px] h-screen">
+                        <div className="px-5 dark:bg-[#121212] bg-white w-[320px] h-screen">
                             <div className="flex justify-between items-center mb-5">
                                 <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" placeholder="blur" /></Link >
-                                <button  onClick={() => setOpen(!open)}><IoCloseSharp className="text-[#FF6B00] text-4xl" /></button >
+                                <button onClick={() => setOpen(!open)}><IoCloseSharp className="text-[#FF6B00] text-4xl" /></button >
                             </div>
                             <ul className="flex flex-col justify-between items-center gap-8 text-xl ">
                                 <Link href='/'>Home</Link >
