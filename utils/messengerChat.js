@@ -24,7 +24,7 @@ const MessengerChat = () => {
     return (
         <>
             <div id="fb-root"></div>
-            <div id="fb-customer-chat" class="fb-customerchat">
+            <div id="fb-customer-chat" className="fb-customerchat">
             </div>
         </>
     );

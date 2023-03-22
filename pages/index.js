@@ -190,11 +190,11 @@ export default function Home() {
         <Technologies />
       </section>
       {/*  review secton bad  */}
-      {/*    <section
+      <section
         className="p-5 md:p-20"
       >
         <Review item={3} deretion={2000} slideInfo={slideInfo} />
-      </section> */}
+      </section>
       {/* 
       Skeleton 
       

@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper';
+import { Navigation,EffectCoverflow, Pagination, Autoplay } from 'swiper';
 import "swiper/css";
 import "swiper/css/pagination";
 import 'swiper/css/navigation';
+import "swiper/css/effect-coverflow";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -48,9 +50,29 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                         )
                     })
                 }
-
-                {
-                    review && slideInfo?.map(data => {
+            </Swiper>
+            {
+                review && <Swiper
+                    effect={"coverflow"}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={4}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        slideShadows: true,
+                    }}
+                    autoplay={{
+                        delay: deretion,
+                        disableOnInteraction: true,
+                        reverseDirection: direction,
+                        pauseOnMouseEnter: true,
+    
+                    }}
+                    modules={[EffectCoverflow,Autoplay]}
+                >
+                  {  slideInfo?.map(data => {
                         return (
                             <SwiperSlide key={data?._id}>
                                 <div className="bg-white rounded-lg  p-6 review_section w-[300px]">
@@ -73,10 +95,20 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                                 </div>
                             </SwiperSlide>
                         )
-                    })
-                }
+                    })}
+                </Swiper>
+            }
 
-            </Swiper>
+
+
+
+
+
+
+
+            {/*  {
+                    review && 
+                } */}
         </>
     );
 }

@@ -31,7 +31,7 @@ export default function Document() {
             `,
         }}
       />
-      <div id="fb-customer-chat" class="fb-customerchat">
+      <div id="fb-customer-chat" className="fb-customerchat">
       </div>
     </Html>
   )

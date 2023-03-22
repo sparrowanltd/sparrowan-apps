@@ -11,7 +11,7 @@ export default function DegitalMarketing() {
         <>
             <section>
                 <Text position="flex" title={[{ text: "Our", color: "000" }, { text: "Degital Marketing", color: "FF6B00" }, { text: "Solution", color: "000" }]} />
-                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 ">
+                <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 ">
                     <DegitalCard title="Social Media" title1="Marketing" image={digital} />
                     <DegitalCard title="Social Media" title1="Marketing" image={digital} />
                     <DegitalCard title="Social Media" title1="Marketing" image={digital} />
