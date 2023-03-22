@@ -4,7 +4,7 @@ import Application from '../../../assets/mobile-application1.png'
 import ServiceCard from "./ServiceCard";
 export default function OurServices() {
     return (
-        <main className="bg-[#000000] p-5 md:p-20">
+        <main className=" p-5 md:p-20 dark:text-white text-black">
             <Text position="flex" title={[{ text: "Our" }, { text: "Services", color: "FF6B00" }]} />
             {/*  ============  service card styles ============  */}
             <section className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16 mt-10">

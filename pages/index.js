@@ -138,7 +138,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="banner_bg_imges">
+      {/* <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
           <div className="px-5 md:px-20 pt-[100px] md:pt-[166px] text-white">
             <h1 className="text-4xl md:text-5xl font-bold">Sparrowan LLC <sapn className="text-[#FF6B00]">.</sapn></h1>
@@ -158,7 +158,7 @@ export default function Home() {
             />
           </div>
         </section>
-      </main>
+      </main> */}
 
       <section className="p-5 md:p-20">
         <marquee>

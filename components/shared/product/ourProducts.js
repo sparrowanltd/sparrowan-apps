@@ -8,10 +8,13 @@ import Button from "../button/Button";
 export default function OurProducts() {
     return (
         <>
-            <main className="bg-[#000000] p-5 lg:p-20 text-white">
+            <main className="p-5 lg:p-20 dark:text-white text-black">
                 <section>
                     <div className="flex justify-center  items-center">
-                        <Text className="" position="flex" title={[{ text: "Our" }, { text: "Products", color: "FF6B00" }]} />
+                        <div className="flex justify-center items-center flex-wrap gap-2">
+                            <h1 className=" text-4xl font-bold">Our</h1>
+                            <h1 className="text-[#FF6B00] text-4xl font-bold">Products</h1>
+                        </div>
                         <Image className="ml-[-20px] " src={Ellipse} width={100} height={100} alt="" />
                     </div>
                     {/* =============== content are  ===============  */}
@@ -19,7 +22,11 @@ export default function OurProducts() {
                         <div className="col-span-5  p-4 text-sm">
                             <div className="w-100 mx-auto text-center lg:text-start lg:flex">
                                 <div className="lg:rotate-90 lg:ml-[-115px] ">
-                                    <Text  position="flex" title={[ { text: "5+", color: "FF6B00" },{ text: "Products" }]} />{/* { text: "5+", color: "FF6B00" }, */}
+                                    <div className="flex justify-center items-center  gap-2">
+                                        <h1 className="text-[#FF6B00] text-4xl font-bold">5+</h1>
+                                        <h1 className=" text-4xl font-bold">Products</h1>
+                                    </div>
+
                                 </div>
                                 <p>
                                     Buy Affordable Software Products to meet your wants. We innovate and enhance your digital recognition with sustainable and adaptable solutions in every possible way! Find your desirable products from here.
@@ -53,7 +60,7 @@ export default function OurProducts() {
                     />
                 </section>
                 {/*  */}
-                <div className="flex justify-center items-center mt-20">
+                <div className="flex justify-center items-center mt-20 text-white">
                     <Button
                         buttonwidth="w-[300px]"
                         title="More Products"

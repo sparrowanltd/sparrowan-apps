@@ -9,7 +9,7 @@ export default function Layout({ children }) {
             <div style={{ fontFamily: "Poppins" }} className="overflow-hidden">
                 <MessengerChat />
                 <Navbar />
-                {/* {children} */}
+                {children}
                 <Footer />
             </div>
         </>

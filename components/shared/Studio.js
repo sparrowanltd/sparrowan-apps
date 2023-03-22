@@ -1,11 +1,12 @@
 import Button from "./button/Button";
 import SwiperSlideContent from "./SwiperSlide";
-import Text from "./text/Text";
-import Vector1 from '../../assets/Vector1.png'
 export default function Studio({ slideInfo }) {
     return (
         <main>
-            <Text position="flex" title={[{ text: "Design", color: "000" }, { text: "Studio", color: "FF6B00" }]} />
+            <div className="flex justify-center items-center  gap-2">
+                <h1 className=" text-4xl font-bold">Design</h1>
+                <h1 className=" text-4xl font-bold text-[#FF6B00]">Studio</h1>
+            </div>
             <div className="mt-10">
                 <div>
                     <SwiperSlideContent item={5} deretion={1000} direction={true} slideInfo={slideInfo} />
