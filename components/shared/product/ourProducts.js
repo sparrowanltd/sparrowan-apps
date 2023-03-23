@@ -8,7 +8,7 @@ import Button from "../button/Button";
 export default function OurProducts() {
     return (
         <>
-            <main className="p-5 lg:p-20 dark:text-white text-black">
+            <main className="mt-20 dark:text-white text-black">
                 <section>
                     <div className="flex justify-center  items-center">
                         <div className="flex justify-center items-center flex-wrap gap-2">

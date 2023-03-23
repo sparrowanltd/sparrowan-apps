@@ -1,0 +1,21 @@
+/* service card styles  */
+.service_card{
+    min-width: 300px;
+    height: 239px;
+    background: linear-gradient(90deg, #FF6B00 0%, rgba(255, 0, 46, 0.75) 100%);
+    border-radius: 10px;
+}
+.text_positon{
+    height: 210px;
+    overflow: hidden;
+}
+.more{
+    color: #FF6B00;
+}
+
+@media only screen and (max-width: 568px) {
+    .main_service_card{
+       display: flex;
+       flex-direction: column;
+    }
+}

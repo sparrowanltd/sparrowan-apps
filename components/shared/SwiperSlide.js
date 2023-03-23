@@ -59,16 +59,13 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                     slidesPerView={4}
                     coverflowEffect={{
                         rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        slideShadows: true,
+                        slideShadows: false,
                     }}
                     autoplay={{
                         delay: deretion,
                         disableOnInteraction: true,
                         reverseDirection: direction,
                         pauseOnMouseEnter: true,
-    
                     }}
                     modules={[EffectCoverflow,Autoplay]}
                     breakpoints={{
@@ -112,17 +109,6 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                     })}
                 </Swiper>
             }
-
-
-
-
-
-
-
-
-            {/*  {
-                    review && 
-                } */}
         </>
     );
 }

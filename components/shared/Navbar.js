@@ -39,33 +39,60 @@ export default function Navbar() {
         }
     </div>
 
+    /* Navlink  */
+    const navLink = [
+        {
+            name: 'Home',
+            link: '/'
+        },
+        {
+            name: 'Service',
+            link: '/service'
+        },
+        {
+            name: 'Projects',
+            link: '/projects'
+        },
+        {
+            name: 'Protfolio',
+            link: '/protfolio'
+        },
+        {
+            name: 'Career',
+            link: '/career'
+        },
+    ]
+
+    const navContent = navLink?.map(({ name, link }) => (
+        <Link key={link} href={link} className={`${router?.asPath === link ? "text-[#FF6B00]" : ""}`}>{name}</Link >
+    ))
+
+
+
+
     return (
         <>
             {/* laptop adn  pc mobile_navbar */}
-            <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-10  flex justify-between ${((router?.asPath == '/') && (theme == "dark")) ? "items-end" : "items-center py-2"}   nav_bar`}>
+            <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-16  flex justify-between ${((router?.asPath == '/') && (theme == "dark")) ? "items-end" : "items-center py-2"}   nav_bar`}>
                 <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" placeholder="blur" /></Link >
                 <ul className="flex justify-between items-center md:gap-8 xl:gap-16 ">
-                    <Link href='/'>Home</Link >
-                    <Link href='/service'>Service</Link >
-                    <Link href='/projects'>Projects</Link >
-                    <Link href='/protfolio'>Protfolio</Link >
-                    <Link href='/career' >Career</Link >
+                    {
+                        navContent
+                    }
                 </ul>
                 <div className="flex items-center gap-10">
                     {darkMode}
                     <Link href='/contact-us' className="bg-[#FF6B00] px-5 rounded text-white ">Contact us</Link >
                 </div>
             </header>
-            {theme==="light" && <hr />}
+            {/* {theme === "light" && <hr />} */}
             {/* moble  navbar  */}
             <header className="mobile_navbar">
 
-                {/* =============== menuber ===============   */}
                 <div className="flex justify-between items-center px-5 my-2">
                     <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" placeholder="blur" /></Link >
                     <button onClick={() => setOpen(!open)}> <Image src={menu} width={30} height={30} alt="menu" placeholder="blur" /></button >
                 </div>
-                {/*  */}
                 {
                     open && <div data-aos="fade-right" className="absolute inset-0 bg-opacity-25 w-screen  h-screen bg-[#000000]">
                         <div className="px-5 dark:bg-[#121212] bg-white w-[320px] h-screen">
@@ -74,11 +101,9 @@ export default function Navbar() {
                                 <button onClick={() => setOpen(!open)}><IoCloseSharp className="text-[#FF6B00] text-4xl" /></button >
                             </div>
                             <ul className="flex flex-col justify-between items-center gap-8 text-xl ">
-                                <Link href='/'>Home</Link >
-                                <Link href='/service'>Service</Link >
-                                <Link href='/projects'>Projects</Link >
-                                <Link href='/protfolio'>Protfolio</Link >
-                                <Link href='/career' >Career</Link >
+                                {
+                                    navContent
+                                }
                                 {darkMode}
                                 <Link href='/contact-us' className="bg-[#FF6B00] px-5 py-1 rounded text-white ">Contact us</Link >
                             </ul>

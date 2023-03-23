@@ -4,7 +4,6 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
 export default function TechnologiesCard({ title, image }) {
     const { theme, setTheme } = useTheme()
-    console.log(theme)
     return (
         <div className="text-center">
             {/* <Skeleton height={100} width={100} circle={true} className="" />

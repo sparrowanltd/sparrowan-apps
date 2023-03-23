@@ -26,6 +26,7 @@ import Technologies from "@/utils/technologies/Technologies";
 import TechnologiesCard from "@/utils/technologies/TechnologiesCard";
 import Review from "@/components/shared/Clients/Review";
 import Image from "next/image";
+import Head from "next/head";
 /* Studio */
 
 export default function Home() {
@@ -135,9 +136,11 @@ export default function Home() {
       icon: stodio10,
     },
   ]
-
   return (
     <>
+      <Head>
+        <title>Home</title>
+      </Head>
       <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
           <div className="px-5 md:px-20 pt-[100px] md:pt-[166px] text-white">
@@ -169,36 +172,17 @@ export default function Home() {
             }
           </div>
         </marquee>
-      </section>
-      {/*  our products handle  */}
-      <section className="mb-10">
         <OurProducts />
-      </section>
-      <section className="p-5 md:p-20">
         <Studio slideInfo={slideInfos} />
-      </section>
-      <section>
         <OurServices />
-      </section>
-      <section className="p-5 md:p-20">
-        <Partners item={5} deretion={2000} slideInfo={slideInfo} />
-      </section>
-      <section className="p-5 md:p-20">
         <DegitalMarketing />
-      </section>
-      <section>
+        <Partners item={5} deretion={2000} slideInfo={slideInfo} />
+
         <Technologies />
-      </section>
-      {/*  review secton bad  */}
-      <section
-        className="p-5 md:p-20"
-      >
         <Review item={3} deretion={2000} slideInfo={slideInfo} />
+
       </section>
-      {/* 
-      Skeleton 
-      
-      */}
+
 
 
     </>

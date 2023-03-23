@@ -3,7 +3,7 @@ import Text from "../text/Text";
 
 export default function Partners({item,deretion,slideInfo}) {
     return (
-        <main>
+        <main className="my-20">
             <div className="flex justify-center  items-center mb-10">
                 <Text className="" position="flex" title={[
                     { text: "Trusted", color: "000" },
