@@ -1,0 +1,120 @@
+.protfolioBanner_main {
+    width: 100%;
+    padding-left: 60px;
+    height: 684px;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.polygon_position {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.polygon_handel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.polygon_contect{
+    width: 100%;
+    position: relative;
+    height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.polygon_contect_img {
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+}
+.polygon_radius{
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 0px 84px 0px;
+}
+.polygon_img_Index{
+    position: absolute;
+    top: 180px;
+    right: 40px;
+    z-index: revert;
+}
+.polygon_img_Index_start{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    z-index: -1;
+}
+
+
+
+.experience{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 100px;
+    border: 5px solid #FF6B00;
+    z-index: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightImages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rightImages div {
+    background-image: url('../assets/Ellipse3.png');
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.rightImagesButtom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.rightImagesButtom>img {
+    width: 300px;
+}

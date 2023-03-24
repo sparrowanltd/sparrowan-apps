@@ -28,7 +28,7 @@ export default function Service() {
                 <title>Service</title>
             </Head>
             {/* =================  main content  ================= */}
-            <main className="p-5 md:p-20 ">
+            <main className="p-5 md:p-10 lg:p-20">
                 <Text position="flex" title={[{ text: "Development", color: "000" }, { text: "Services", color: "FF6B00" }]} />
                 <div className="grid grid-col-1 gap-1">
                     {serviceData}
