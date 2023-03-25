@@ -23,8 +23,8 @@ const MessengerChat = () => {
 
     return (
         <main>
-            {/* <div id="fb-root"></div>  */}
-            <div id="fb-customer-chat" ></div>
+{/*             <div id="fb-root"></div> 
+ */}            <div id="fb-customer-chat" ></div>
         </main>
     );
 };

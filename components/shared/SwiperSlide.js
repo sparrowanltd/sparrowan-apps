@@ -20,8 +20,8 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                     disableOnInteraction: true,
                     reverseDirection: direction,
                     pauseOnMouseEnter: true,
-
                 }}
+                loop={true}
                 modules={[Autoplay]}
                 breakpoints={{
                     // when window width is >= 640px
@@ -57,6 +57,7 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                     grabCursor={true}
                     centeredSlides={true}
                     slidesPerView={4}
+                    loop={true}
                     coverflowEffect={{
                         rotate: 50,
                         slideShadows: false,
@@ -69,7 +70,7 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                     }}
                     modules={[EffectCoverflow,Autoplay]}
                     breakpoints={{
-                        // when window width is >= 640px
+                        // when window width is >= 640px 
                         320: {
                             slidesPerView:1,
                         },
