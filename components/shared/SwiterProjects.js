@@ -52,7 +52,7 @@ export default function SwiterProjects() {
                 }}
 
 
-                modules={[EffectCoverflow,Autoplay, Pagination, Navigation]}
+                modules={[EffectCoverflow,Autoplay]}/*Pagination  Navigation */
 
             >
                 <SwiperSlide>
