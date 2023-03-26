@@ -21,7 +21,7 @@
 .centerContectbg {
     width: 583px;
     height: 583px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border-radius: 100%;
     background: rgba(255, 255, 255, 0.63);
@@ -50,8 +50,21 @@
     top: 69px;
     right: 0;
 }
+.bannerTopRightDoct{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+
+}
 .bannerbottomLeft{
     position: absolute;
     left: 0;
     bottom: 0;
+}
+.bannerTopLeftDoct{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
 }

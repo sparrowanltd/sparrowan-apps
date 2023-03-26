@@ -20,7 +20,7 @@ export default function Footer() {
                         <div className="">
                             <h1
                                 className="mb-4 flex items-center  font-semibold uppercase justify-start">
-                                <Link href='/'> <Image src={logo} className="w-100" width="" height="" alt="Logo" placeholder="blur" /></Link >
+                                <Link href='/'> <Image src={logo} className="w-100" width="" height="" alt="Logo"  /></Link >
                             </h1>
                             <div className="">
                                 <p
@@ -141,7 +141,7 @@ export default function Footer() {
                                 </p>
                                 <p className="mb-4 flex">
                                     <input type='email' placeholder="Type your email" className="w-100 px-2 outline-none border-2 rounded-lg border-[#FF6B00] bg-transparent placeholder:text-sm" />
-                                    <Image src={Vector} className="w-[75px] bg-[#FF6B00] px-6 py-1 ml-[-20px] rounded-lg" width="" height="" alt="Logo" placeholder="blur" />
+                                    <Image src={Vector} className="w-[75px] bg-[#FF6B00] px-6 py-1 ml-[-20px] rounded-lg" width="" height="" alt="Logo"  />
                                 </p>
                             </div>
                         </div>
@@ -154,15 +154,15 @@ export default function Footer() {
                             Terms of Service | Privacy Policy
                         </p>
                         <ul className="mt-10 md:mt-10 flex justify-between items-center gap-2 md:gap-5  ">
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group4} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group5} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className=""><Link href='/'> <Image src={Line} width="30px" height="10px"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
-                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo" placeholder="blur" /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group4} width="30px" height="auto"  alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group5} width="30px" height="auto"  alt="Logo"  /></Link ></li>
+                            <li className=""><Link href='/'> <Image src={Line} width="30px" height="10px"  alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group2} width="30px" height="auto"  alt="Logo"  /></Link ></li>
+                            <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group3} width="30px" height="auto"  alt="Logo"  /></Link ></li>
                         </ul>
 
                     </div>
