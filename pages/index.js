@@ -183,7 +183,6 @@ export default function Home() {
         <DegitalMarketing />
 
         <Technologies />
-        <Review item={3} deretion={2000} slideInfo={slideInfo} />
         {/* plan  */}
         <section className="w-100 h-[600px] relative">
           <div className="absolute top-0">
