@@ -40,12 +40,20 @@ export default function Projects() {
                 </div>
             </div>
             {/* product show section  */}
-            <section className="p-20">
+            <section className="p-5 md:10 xl:p-20 w-full mx-auto">
                 <div className="flex justify-start items-center flex-wrap gap-2 my-6 text-xl font-bold">
                     <h1 >Project</h1>
                     <h1 className="text-[#FF6B00] ">showcase</h1>
                 </div>
-                <div>
+                <div className="flex justify-between gap-5 items-center flex-wrap		">
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
                     <ProductCard />
                 </div>
             </section>

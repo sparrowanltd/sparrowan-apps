@@ -155,12 +155,13 @@
 
 /* ==============  counter ================  */
 .counter {
-    width:96%;
+    width: 96%;
     height: 200px;
     position: absolute;
     bottom: 0;
     margin: auto;
 }
+
 .counter section {
     width: 50%;
     height: 150px;
@@ -172,8 +173,24 @@
     text-align: center;
     background-color: #fff;
 }
-.counter section h1{
+
+.counter section h1 {
     font-weight: bold;
     font-size: 50px;
     color: #FF6B00;
+}
+
+/* ============================== see post more  ==============================*/
+.seePostcard_main {
+    position: relative;
+}
+
+.seePostcard_bg_styles {
+    position: absolute;
+    left: -150px ;
+    top: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: rgba(255, 107, 0, 0.2);
 }
