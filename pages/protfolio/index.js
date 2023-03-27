@@ -7,13 +7,14 @@ import styles from '../../styles/protfolio.module.css'
 import Head from "next/head";
 import ProtfolioSeeCard from "@/components/shared/ProtfolioSeeCard";
 import Image from "next/image";
+import TeamSkeleton from "@/utils/skeleton/TeamSkeleton";
 export default function Protfolio() {
     return (
         <>
             <Head>
                 <title>Protfolio</title>
             </Head>
-            <main className="mb-[500px]">
+            <main className="">
                 <ProtfolioBanner />
                 {/* ============== see our post  ==============  */}
                 <div className="p-5 md:p-10 xl:p-20">
@@ -43,6 +44,13 @@ export default function Protfolio() {
                             <span>View All Team Member</span>
                             <span><Image src={leftArrow} width={20} height={20} alt="icon" /> </span>
                         </button>
+                    </div>
+                    {/*  */}
+                    <div className={`my-20 ${styles.teamCard_main}  mx-auto`}>
+                        <div className={`${styles.teamCard_bg_styles}`}>
+
+                        </div>
+                        <TeamSkeleton/>
                     </div>
                 </div>
                 {/* ============== Our support ==============  */}

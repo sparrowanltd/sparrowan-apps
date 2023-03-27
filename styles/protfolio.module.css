@@ -194,3 +194,17 @@
     border-radius: 100%;
     background: rgba(255, 107, 0, 0.2);
 }
+/* ============================== see post more  ==============================*/
+.team_main {
+    position: relative;
+}
+
+.team_bg_styles {
+    position: absolute;
+    right: -150px ;
+    top: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: rgba(255, 107, 0, 0.2);
+}
