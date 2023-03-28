@@ -162,7 +162,7 @@ export default function Home() {
               bgColor={"banner_button"}
               positin="justify-around"
               icon={icon}
-              link="/home"
+              link="/home/startProject"
             // extra=".."
             />
           </div>
