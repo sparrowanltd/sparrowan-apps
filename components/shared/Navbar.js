@@ -61,7 +61,7 @@ export default function Navbar() {
             name: 'Career',
             link: '/career'
         },
-        
+
     ]
 
     const navContent = navLink?.map(({ name, link }) => (
@@ -75,7 +75,7 @@ export default function Navbar() {
         <>
             {/* laptop adn  pc mobile_navbar */}
             <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-16  flex justify-between ${((router?.asPath == '/') && (theme == "dark")) ? "items-end" : "items-center py-2"}   nav_bar`}>
-                <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo"  /></Link >
+                <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" /></Link >
                 <ul className="flex justify-between items-center md:gap-8 xl:gap-16 ">
                     {
                         navContent
@@ -91,14 +91,14 @@ export default function Navbar() {
             <header className="mobile_navbar">
 
                 <div className="flex justify-between items-center px-5 my-2">
-                    <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo"  /></Link >
-                    <button onClick={() => setOpen(!open)}> <Image src={menu} width={30} height={30} alt="menu"  /></button >
+                    <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" /></Link >
+                    <button onClick={() => setOpen(!open)}> <Image src={menu} width={30} height={30} alt="menu" /></button >
                 </div>
                 {
                     open && <div data-aos="fade-right" className="absolute inset-0 bg-opacity-25 w-screen  h-screen bg-[#000000]">
                         <div className="px-5 dark:bg-[#121212] bg-white w-[320px] h-screen">
                             <div className="flex justify-between items-center mb-5">
-                                <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo"  /></Link >
+                                <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" /></Link >
                                 <button onClick={() => setOpen(!open)}><IoCloseSharp className="text-[#FF6B00] text-4xl" /></button >
                             </div>
                             <ul className="flex flex-col justify-between items-center gap-8 text-xl ">
