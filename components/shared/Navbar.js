@@ -54,7 +54,7 @@ export default function Navbar() {
             link: '/projects'
         },
         {
-            name: 'Protfolio',
+            name: 'Portfolio',
             link: '/protfolio'
         },
         {
