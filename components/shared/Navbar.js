@@ -61,6 +61,7 @@ export default function Navbar() {
             name: 'Career',
             link: '/career'
         },
+        
     ]
 
     const navContent = navLink?.map(({ name, link }) => (
@@ -82,7 +83,7 @@ export default function Navbar() {
                 </ul>
                 <div className="flex items-center gap-10">
                     {darkMode}
-                    <Link href='/contact-us' className="bg-[#FF6B00] px-5 rounded text-white ">Contact us</Link >
+                    <Link href='/contact' className="bg-[#FF6B00] px-5 rounded text-white ">Contact us</Link >
                 </div>
             </header>
             {/* {theme === "light" && <hr />} */}
@@ -105,7 +106,7 @@ export default function Navbar() {
                                     navContent
                                 }
                                 {darkMode}
-                                <Link href='/contact-us' className="bg-[#FF6B00] px-5 py-1 rounded text-white ">Contact us</Link >
+                                <Link href='/contact' className="bg-[#FF6B00] px-5 py-1 rounded text-white ">Contact us</Link >
                             </ul>
 
 
