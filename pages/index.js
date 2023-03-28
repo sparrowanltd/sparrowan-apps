@@ -35,6 +35,7 @@ import Head from "next/head";
 /* Studio */
 
 export default function Home() {
+  const backgroundImageUrl = "../assets/stodio6.png'";
 
   const slideInfo = [
     {

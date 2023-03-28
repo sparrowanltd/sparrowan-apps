@@ -4,10 +4,16 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { EffectCoverflow, Pagination, Navigation,Autoplay } from 'swiper';
+import "swiper/swiper-bundle.css";
+import styles from '../../styles/teamSkeleton.module.css'
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper';
+import pinter from '../../assets/pinter.png';
+import facebook from '../../assets/facebook.png';
+import twitter from '../../assets/twitter.png';
 import slide_image_1 from '../../assets/preview1.png';
 import Image from 'next/image';
-
+console.log(slide_image_1)
+const backgroundImageUrl = slide_image_1.src;
 export default function TeamSkeleton() {
     return (
         <div >
@@ -46,30 +52,151 @@ export default function TeamSkeleton() {
                 }}
 
 
-                modules={[EffectCoverflow,Autoplay]}/*Pagination  Navigation */
+                modules={[EffectCoverflow, Autoplay]}/*Pagination  Navigation */
 
             >
                 <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl'/>
+                    <div
+                        style={{
+                            width: '400px',
+                            height: '300px',
+                            backgroundImage: `url(${backgroundImageUrl})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            position: 'relative',
+                            borderRadius: '10px',
+                        }}
+                    >
+                        <div className={`${styles.socalMedia}`}>
+                            <div className='flex flex-row gap-5'>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Twitter</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={pinter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Website</h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl' />
+                    <div
+                        style={{
+                            width: '400px',
+                            height: '300px',
+                            backgroundImage: `url(${backgroundImageUrl})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            position: 'relative',
+                            borderRadius: '10px',
+                        }}
+                    >
+                        <div className={`${styles.socalMedia}`}>
+                        <div className='flex flex-row gap-5'>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Twitter</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={pinter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Website</h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl' />
+                    <div
+                        style={{
+                            width: '400px',
+                            height: '300px',
+                            backgroundImage: `url(${backgroundImageUrl})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            position: 'relative',
+                            borderRadius: '10px',
+                        }}
+                    >
+                        <div className={`${styles.socalMedia}`}>
+                        <div className='flex flex-row gap-5'>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Twitter</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={pinter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Website</h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl' />
+                    <div
+                        style={{
+                            width: '400px',
+                            height: '300px',
+                            backgroundImage: `url(${backgroundImageUrl})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            position: 'relative',
+                            borderRadius: '10px',
+                        }}
+                    >
+                        <div className={`${styles.socalMedia}`}>
+                        <div className='flex flex-row gap-5'>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Twitter</h1>
+                                </div>
+                                <div className='flex justify-start items-cetnter gap-2'>
+                                    <Image className='w-[20px]' src={pinter} width={100} height={100} alt="imges" />
+                                    <h1 className='text-white font-bold text-sm '>Website</h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={slide_image_1} width={100} height={100} alt="slide_image" className='w-[600px] rounded-2xl' />
-                </SwiperSlide>
+
+
             </Swiper>
         </div>
     );
