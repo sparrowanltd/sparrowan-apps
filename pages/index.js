@@ -153,7 +153,8 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold ">Our aim is to<sapn className="text-[#FF6B00]">...</sapn></h1>
             <h2 className="my-[34px] font-semibold text-[#FF6B00]">{/* Tune your technology */}</h2>
             <p className="mb-[66px]">
-              create intelligent, innovative, and sustainable technology solutions and <br /> services across multiple platforms, with a strong emphasis on professionalism in design and development.
+              create intelligent, innovative, and sustainable technology solutions and <br /> services across multiple platforms, with a strong emphasis 
+              on <br /> professionalism in design and development.
               {/* Design & develop intelligent, innovative and sustainable technology <br /> solutions and services on multiple platforms. */}
             </p>
             <Button

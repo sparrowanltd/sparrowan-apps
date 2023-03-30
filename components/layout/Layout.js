@@ -39,7 +39,19 @@ export default function Layout({ children }) {
       link: "/",
       icon: stodio4,
       text: 'Sparrowan Limited has been a valuable partner for our business, providing cost-effective solutions that have helped us achieve significant cost savings while improving our operations. Their level of professionalism and expertise is unmatched, and we highly recommend their services'
-    }
+    },
+    {
+      _id: 5,
+      link: "/",
+      icon: stodio4,
+      text: 'We have worked with several IT companies in the past, but Sparrowan Limited stands out for their attention to detail and commitment to understanding our business needs. They have helped us transform our digital presence and achieve our goals through their innovative solutions.'
+    },
+    {
+      _id: 6,
+      link: "/",
+      icon: stodio4,
+      text: 'The support provided by this IT company has been outstanding. Their team is responsive and knowledgeable, and they have always gone above and beyond to ensure that our IT systems are operating at peak performance.'
+    },
   ]
 
   return (

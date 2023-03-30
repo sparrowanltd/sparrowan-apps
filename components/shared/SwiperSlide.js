@@ -99,10 +99,7 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                                             <p className="text-gray-500 text-sm">5 stars</p>
                                         </div>
                                     </div>
-                                    <p className="text-center text-base">
-                                        {data.text.slice(0,200)}
-                                       {/* {data.text} */}
-                                    </p>
+                                    <p className="text-center text-base">" {data.text.slice(0,200)} "</p>
                                 </div>
                             </SwiperSlide>
                         )
