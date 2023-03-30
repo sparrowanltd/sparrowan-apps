@@ -185,17 +185,16 @@ export default function Home() {
 
         <Technologies />
         {/* plan  */}
-        <section className="w-100 h-[600px] relative">
+        <section className="w-100 h-100 relative">
           <div className="absolute top-0">
-            <Image className="w-[150px]" src={Ellipse20} width={100} height={100} alt="imges" />
+            <Image className="w-0 md:w-[150px]" src={Ellipse20} width={100} height={100} alt="imges" />
           </div>
           <div className="p-4 ">
-            <div className="mt-20 grid grid-cols-1 md:grid-cols-2	gap-10">
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-2	gap-5 lx:gap-10">
               <div >
                 <div className="flex justify-start items-center flex-wrap gap-2 my-6">
-                  <h1 className="text-[#FF6B00] text-4xl font-bold">Why Work</h1>
-                  <h1 className=" text-4xl font-bold"> With Us</h1> <div>
-                  </div>
+                  <h1 className="text-[#FF6B00] text-2xl lg:text-4xl font-bold">Why Work</h1>
+                  <h1 className=" text-2xl lg:text-4xl font-bold"> With Us</h1> 
                 </div>
                 <p>Delivering Great Digital Products and Building  Culture People</p>
                 {/* ======= help card =======  */}
@@ -231,8 +230,8 @@ export default function Home() {
                 </div>
               </div>
               {/* help images handel   */}
-              <div className="relative">
-                <div className="absolute top-[45%]	left-[20%]">
+              <div className="hidden md:block relative">
+                <div className=" absolute top-[45%]	left-[20%]">
                   <Image className="w-[120px]" src={Ellipse20} width={100} height={100} alt="imges" />
                 </div>
                 <div className="absolute  top-[30%]	left-[30%] z-20">
@@ -258,35 +257,35 @@ export default function Home() {
           <div className="flex justify-center items-center flex-wrap gap-2 my-6">
             <h1 className="text-[#FF6B00] text-4xl font-bold">Help</h1>
             <h1 className=" text-4xl font-bold">to</h1> <div>
-              <h1 className="text-[#FF6B00] text-4xl font-bold">Help</h1>
+              <h1 className="text-[#FF6B00] text-4xl font-bold">Hel</h1>
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-10">
-            <div className="col-span-5 flex justify-start items-center">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            <div className="col-span-7 md:col-span-5 flex justify-start items-center">
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
               <div className="w-[50%] h-[100%] bg-[#FF6B00] text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-2xl font-bold">275+ Projects done</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done1</h1>
               </div>
 
             </div>
             <div className="col-span-7  flex justify-start items-center">
 
               <div className="w-[50%] h-[100%] bg-black text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-2xl font-bold">275+ Projects done</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done2</h1>
               </div>
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
             </div>
             <div className="col-span-7  flex justify-start items-center">
 
               <div className="w-[50%] h-[100%] bg-black text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-2xl font-bold">275+ Projects done</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done</h1>
               </div>
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
             </div>
-            <div className="col-span-5  flex justify-start items-center">
+            <div className="col-span-7 md:col-span-5  flex justify-start items-center">
 
               <div className="w-[50%] h-[100%] bg-[#FF6B00] text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-2xl font-bold">275+ Projects done</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done</h1>
               </div>
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
             </div>
