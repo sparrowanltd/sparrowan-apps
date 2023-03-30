@@ -55,7 +55,7 @@ export default function Protfolio() {
                     </div>
                 </div>
                 {/* ============== Our FounderSwiter ==============  */}
-                <div className="w-100 h-[600px] p-5 md:p-10 lg:p-20">
+                <div className="w-100 h-[750px] p-5 md:p-10 lg:p-20 overflow-hidden">
                     <FounderSwiter />
                 </div>
                 {/* ============== Our support ==============  */}
