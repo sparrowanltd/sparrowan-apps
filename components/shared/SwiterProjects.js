@@ -27,7 +27,7 @@ export default function SwiterProjects() {
                     pauseOnMouseEnter: true,
                 }}
 
-                centeredSlides={true}
+                centeredSlides={true} 
                 loop={true}
                 coverflowEffect={{
                     rotate: 0,

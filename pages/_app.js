@@ -2,6 +2,7 @@ import Layout from '@/components/layout/Layout'
 import '@/styles/globals.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'swiper/swiper.min.css';
 import { ThemeProvider } from 'next-themes'
 import { useEffect } from 'react';
 import NextNProgress from 'nextjs-progressbar';

@@ -12,7 +12,6 @@ import facebook from '../../assets/facebook.png';
 import twitter from '../../assets/twitter.png';
 import slide_image_1 from '../../assets/preview1.png';
 import Image from 'next/image';
-console.log(slide_image_1)
 const backgroundImageUrl = slide_image_1.src;
 export default function TeamSkeleton() {
     return (
@@ -72,7 +71,7 @@ export default function TeamSkeleton() {
                             <div className='flex flex-row gap-5'>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
-                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                    <h1 className='text-white font-bold text-sm  '>Facbook</h1>
                                 </div>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
@@ -107,7 +106,7 @@ export default function TeamSkeleton() {
                         <div className='flex flex-row gap-5'>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
-                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                    <h1 className='text-white font-bold text-sm  '>Facbook</h1>
                                 </div>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
@@ -142,7 +141,7 @@ export default function TeamSkeleton() {
                         <div className='flex flex-row gap-5'>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
-                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                    <h1 className='text-white font-bold text-sm  '>Facbook</h1>
                                 </div>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />
@@ -177,7 +176,7 @@ export default function TeamSkeleton() {
                         <div className='flex flex-row gap-5'>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={facebook} width={100} height={100} alt="imges" />
-                                    <h1 className='text-white font-bold text-sm  bg-red-500'>Facbook</h1>
+                                    <h1 className='text-white font-bold text-sm  '>Facbook</h1>
                                 </div>
                                 <div className='flex justify-start items-cetnter gap-2'>
                                     <Image className='w-[20px]' src={twitter} width={100} height={100} alt="imges" />

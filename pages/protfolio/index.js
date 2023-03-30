@@ -8,6 +8,7 @@ import Head from "next/head";
 import ProtfolioSeeCard from "@/components/shared/ProtfolioSeeCard";
 import Image from "next/image";
 import TeamSkeleton from "@/utils/skeleton/TeamSkeleton";
+import FounderSwiter from "@/components/shared/FounderSwiter";
 export default function Protfolio() {
     return (
         <>
@@ -50,8 +51,12 @@ export default function Protfolio() {
                         <div className={`${styles.teamCard_bg_styles}`}>
 
                         </div>
-                        <TeamSkeleton/>
+                        <TeamSkeleton />
                     </div>
+                </div>
+                {/* ============== Our FounderSwiter ==============  */}
+                <div className="w-100 h-[600px] p-5 md:p-10 lg:p-20">
+                    <FounderSwiter />
                 </div>
                 {/* ============== Our support ==============  */}
                 <div className="mt-10 ">
