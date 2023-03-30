@@ -15,69 +15,43 @@ import stodio9 from '../../assets/stodio9.png';
 import stodio10 from '../../assets/stodio10.png';
 import Review from "../shared/Clients/Review";
 export default function Layout({ children }) {
-    const slideInfos = [
-        {
-          _id: 1,
-          link: "/",
-          icon: stodio1,
-        },
-        {
-          _id: 2,
-          link: "/",
-          icon: stodio2,
-        },
-        {
-          _id: 3,
-          link: "/",
-          icon: stodio3,
-        },
-        {
-          _id: 4,
-          link: "/",
-          icon: stodio4,
-        },
-        {
-          _id: 5,
-          link: "/",
-          icon: stodio5,
-        },
-        {
-          _id: 6,
-          link: "/",
-          icon: stodio6,
-        },
-        {
-          _id: 7,
-          link: "/",
-          icon: stodio7,
-        },
-        {
-          _id: 8,
-          link: "/",
-          icon: stodio8,
-        },
-        {
-          _id: 9,
-          link: "/",
-          icon: stodio9,
-        },
-        {
-          _id: 10,
-          link: "/",
-          icon: stodio10,
-        },
-      ]
+  const slideInfos = [
+    {
+      _id: 1,
+      link: "/",
+      icon: stodio1,
+      text: 'We were impressed with the level of innovation and creativity demonstrated by this company. Their solutions have enabled us to stay ahead of the curve and remain competitive in our industry'
+    },
+    {
+      _id: 2,
+      link: "/",
+      icon: stodio2,
+      text: 'The security measures implemented by Sparrowan Limited have given us peace of mind knowing that our data and systems are protected from cyber threats. We highly recommend their services to any business seeking a reliable and secure IT partner'
+    },
+    {
+      _id: 3,
+      link: "/",
+      icon: stodio3,
+      text: 'We engaged with Sparrowan Limited for a complex project and were extremely impressed with their technical knowledge and ability to deliver the project on time and within budget. Their project management skills were exceptional, ensuring that we were kept informed every step of the way'
+    },
+    {
+      _id: 4,
+      link: "/",
+      icon: stodio4,
+      text: 'Sparrowan Limited has been a valuable partner for our business, providing cost-effective solutions that have helped us achieve significant cost savings while improving our operations. Their level of professionalism and expertise is unmatched, and we highly recommend their services'
+    }
+  ]
 
-    return (
-        <>
-            <div className="overflow-hidden" style={{ fontFamily: "Poppins" }} >
-                <MessengerChat />
-                <Navbar />
-                {children}
-                <Review item={3} deretion={2000} slideInfo={slideInfos} />
-                <Footer />
-            </div>
-        </>
+  return (
+    <>
+      <div className="overflow-hidden" style={{ fontFamily: "Poppins" }} >
+        <MessengerChat />
+        <Navbar />
+        {children}
+        <Review item={3} deretion={2000} slideInfo={slideInfos} />
+        <Footer />
+      </div>
+    </>
 
-    )
+  )
 }

@@ -25,16 +25,20 @@ export default function OurProducts() {
                     {/* =============== content are  ===============  */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-10 mt-10 relative">
                         <div className="col-span-7 md:col-span-5  p-4 text-sm  mx-auto">
-                            <div className="w-100 mx-auto text-center lg:text-start lg:flex">
-                                <div className="lg:rotate-90 lg:ml-[-115px] ">
+                            <div className="w-100 mx-auto ">
+                                {/* <div className="lg:rotate-90 lg:ml-[-115px] ">
                                     <div className="flex justify-center items-center  gap-2">
                                         <h1 className="text-[#FF6B00] text-4xl font-bold">5+</h1>
                                         <h1 className=" text-4xl font-bold">Products</h1>
                                     </div>
 
-                                </div>
+                                </div> */}
+                                 <div className="flex justify-start items-center  gap-2">
+                                        <h1 className="text-[#FF6B00] text-4xl font-bold">5+</h1>
+                                        <h1 className=" text-4xl font-bold">Products</h1>
+                                    </div>
                                 <p>
-                                    Buy Affordable Software Products to meet your wants. We innovate and enhance your digital recognition with sustainable and adaptable solutions in every possible way! Find your desirable products from here.
+                                We offer cost-effective software products tailored to your specific needs. Our solutions are designed to enhance your digital presence and improve your recognition, with a focus on sustainability and adaptability. You can explore our range of products to find the ones that best meet your requirements.
                                 </p>
                             </div>
                         </div>
@@ -53,14 +57,14 @@ export default function OurProducts() {
                 <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mt-10">
                     <OurCards
                         bgColor='bg-[#1F78B4]'
-                        title="GYM Apps"
+                        title="Mobile Apps"
                         paragraph="There’s more to health than fitness. While you’ll find a ton of new ways to get active, like AntiGravity Fitness, barre, and HIIT, you’ll get so much more than that.
                         Enjoy contemporary food and drink at the Catalyst Restaurant & Lounge, connect with friends in our social lounge, or quiet your mind in a meditation pod. Altea Active is here for all of you."
                         image={pc}
                     />
                     <OurCards
                         bgColor='bg-[#7879F1]' 
-                        title="Yoga Apps"
+                        title="Web Development & Software Solutions"
                         paragraph="There’s more to health than fitness. While you’ll find a ton of new ways to get active, like AntiGravity Fitness, barre, and HIIT, you’ll get so much more than that.
                         Enjoy contemporary food and drink at the Catalyst Restaurant & Lounge, connect with friends in our social lounge, or quiet your mind in a meditation pod. Altea Active is here for all of you."
                         image={pc}

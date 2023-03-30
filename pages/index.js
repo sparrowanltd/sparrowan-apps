@@ -150,10 +150,11 @@ export default function Home() {
       <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
           <div className="px-5 md:px-20 pt-[100px] md:pt-[166px] text-white">
-            <h1 className="text-4xl md:text-5xl font-bold">Sparrowan LLC <sapn className="text-[#FF6B00]">.</sapn></h1>
-            <h2 className="my-[34px] font-semibold text-[#FF6B00]">Tune your technology</h2>
+            <h1 className="text-4xl md:text-5xl font-bold ">Our aim is to<sapn className="text-[#FF6B00]">...</sapn></h1>
+            <h2 className="my-[34px] font-semibold text-[#FF6B00]">{/* Tune your technology */}</h2>
             <p className="mb-[66px]">
-              Design & develop intelligent, innovative and sustainable technology <br /> solutions and services on multiple platforms.
+              create intelligent, innovative, and sustainable technology solutions and <br /> services across multiple platforms, with a strong emphasis on professionalism in design and development.
+              {/* Design & develop intelligent, innovative and sustainable technology <br /> solutions and services on multiple platforms. */}
             </p>
             <Button
               buttonwidth="w-[280px]"
@@ -193,19 +194,19 @@ export default function Home() {
             <div className="mt-20 grid grid-cols-1 md:grid-cols-2	gap-5 lx:gap-10">
               <div >
                 <div className="flex justify-start items-center flex-wrap gap-2 my-6">
-                  <h1 className="text-[#FF6B00] text-2xl lg:text-4xl font-bold">Why Work</h1>
-                  <h1 className=" text-2xl lg:text-4xl font-bold"> With Us</h1> 
+                  <h1 className="text-[#FF6B00] text-2xl lg:text-4xl font-bold">Why</h1>
+                  <h1 className=" text-2xl lg:text-4xl font-bold"> With Us</h1>
                 </div>
-                <p>Delivering Great Digital Products and Building  Culture People</p>
-                {/* ======= help card =======  */}
+                {/*                 <p>Delivering Great Digital Products and Building  Culture People</p>
+ */}                {/* ======= help card =======  */}
                 <div className="my-10 ">
                   <div className="flex gap-4 justify-start mb-10">
                     <div>
                       <Image className="w-[100px] rounded-full" src={Ellipse20} width={50} height={50} alt="imges" />
                     </div>
                     <div>
-                      <h1 className="text-sm font-bold">This is a </h1>
-                      <p className="text-sm">Delivering Great Digital Products ng Great Digital Products ang Great Digital Products ang Great Digital Products ang Great Digital Products aand Building  Culture People</p>
+                      {/*                       <h1 className="text-sm font-bold">This is a </h1>
+ */}                      <p className="text-sm">Customer focus: We are dedicated to providing exceptional customer service and support, ensuring that your experience with us is positive and productive.</p>
                     </div>
                   </div>
                   <div className="flex gap-4 justify-start mb-10">
@@ -213,8 +214,9 @@ export default function Home() {
                       <Image className="w-[100px] rounded-full" src={Ellipse20} width={50} height={50} alt="imges" />
                     </div>
                     <div>
-                      <h1 className="text-sm font-bold">This is a </h1>
-                      <p className="text-sm">Delivering Great Digital Products ng Great Digital Products ang Great Digital Products ang Great Digital Products ang Great Digital Products aand Building  Culture People</p>
+                      {/*                       <h1 className="text-sm font-bold">This is a </h1>
+ */}                      <p className="text-sm">Security: We take security seriously and implement robust measures to protect your data and systems from cyber threats.
+                      </p>
                     </div>
                   </div>
                   <div className="flex gap-4 justify-start mb-10">
@@ -222,8 +224,8 @@ export default function Home() {
                       <Image className="w-[100px] rounded-full" src={Ellipse20} width={50} height={50} alt="imges" />
                     </div>
                     <div>
-                      <h1 className="text-sm font-bold">This is a </h1>
-                      <p className="text-sm">Delivering Great Digital Products ng Great Digital Products ang Great Digital Products ang Great Digital Products ang Great Digital Products aand Building  Culture People</p>
+                      {/*                       <h1 className="text-sm font-bold">This is a </h1>
+ */}                      <p className="text-sm">Cost-effectiveness: We offer competitive pricing and work with you to develop solutions that provide value for your investment.</p>
                     </div>
                   </div>
 
@@ -255,37 +257,37 @@ export default function Home() {
         {/* ============ help section start  ==========   */}
         <section >
           <div className="flex justify-center items-center flex-wrap gap-2 my-6">
-            <h1 className="text-[#FF6B00] text-4xl font-bold">Help</h1>
-            <h1 className=" text-4xl font-bold">to</h1> <div>
-              <h1 className="text-[#FF6B00] text-4xl font-bold">Hel</h1>
-            </div>
+            <h1 className=" text-4xl font-bold">Accomplishments</h1>
+           {/*  <h1 className=" text-4xl font-bold p-0 m-0">plis</h1> <div>
+              <h1 className="text-[#FF6B00] text-4xl font-bold">hments</h1>
+            </div> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
             <div className="col-span-7 md:col-span-5 flex justify-start items-center">
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
               <div className="w-[50%] h-[100%] bg-[#FF6B00] text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done1</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">Health Care</h1>
               </div>
 
             </div>
             <div className="col-span-7  flex justify-start items-center">
 
               <div className="w-[50%] h-[100%] bg-black text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done2</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">Real Estate</h1>
               </div>
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
             </div>
             <div className="col-span-7  flex justify-start items-center">
 
               <div className="w-[50%] h-[100%] bg-black text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">RMG & Textile</h1>
               </div>
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
             </div>
             <div className="col-span-7 md:col-span-5  flex justify-start items-center">
 
               <div className="w-[50%] h-[100%] bg-[#FF6B00] text-center text-white p-4 flex justify-center items-center flex-wrap">
-                <h1 className="text-xl md:text-2xl md:font-bold">275+ Projects done</h1>
+                <h1 className="text-xl md:text-2xl md:font-bold">Education</h1>
               </div>
               <Image className="w-[50%] h-[100%]" src={imageshelp} width={100} height={100} alt="imges" />
             </div>

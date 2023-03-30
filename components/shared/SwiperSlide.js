@@ -100,9 +100,8 @@ export default function SwiperSlideContent({ item, direction, deretion, slideInf
                                         </div>
                                     </div>
                                     <p className="text-center text-base">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor velit
-                                        vel diam vulputate, nec ultricies velit pellentesque. Sed eu nibh vel
-                                        mauris finibus dictum.
+                                        {data.text.slice(0,200)}
+                                       {/* {data.text} */}
                                     </p>
                                 </div>
                             </SwiperSlide>
