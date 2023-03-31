@@ -152,9 +152,9 @@ export default function Footer() {
                     {/*  */}
                     <hr className="my-6" />
                     <div className="md:flex justify-between items-center ">
-                        <p className="text-sm">© {year} – Sparrowan LLC | All Rights Reserved | Serving clients since 2019
+                        <p className="text-sm">© {year} – Sparrowan Limited | All Rights Reserved 
                         <br />
-                            Terms of Service | Privacy Policy
+                        Terms of Services I Privacy Policy I Disclaimer
                         </p>
                         <ul className="mt-10 md:mt-10 flex justify-between items-center gap-2 md:gap-5  ">
                             <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1}  width="30px" height="auto" alt="Logo"  /></Link ></li>
