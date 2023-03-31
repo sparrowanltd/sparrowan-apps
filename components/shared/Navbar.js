@@ -206,8 +206,6 @@ export default function Navbar() {
         },
 
     ]
-    const [menubersdf, setsdf] = useState([])
-    console.log(menubersdf)
 
     const navContent = navLink?.map(({ name, link, menu }) => (
         <li>
@@ -215,20 +213,7 @@ export default function Navbar() {
                 <Link key={link} href={link} className={`${router?.asPath === link ? "text-[#FF6B00]" : ""}`}>
                     {name}
                 </Link >
-                {/* {link == '/service' && <MdArrowDropDown onClick={() => setsdf(menu)} />} */}
             </div>
-            {/* {menu && <ul className="">
-                {
-                    menu?.map((menu,index) => (
-                        <div className="flex items-center gap-2">
-                            <Link key={index} href='/' >{menu?.menuName}</Link >
-                        </div>
-                    ))
-                }
-
-            </ul>} */}
-
-
         </li>
     ))
 
@@ -238,7 +223,7 @@ export default function Navbar() {
     return (
         <>
             {/* laptop adn  pc mobile_navbar */}
-            <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-16  flex justify-between ${((router?.asPath == '/') && (theme == "dark")) ? "items-end" : "items-center py-2"}   nav_bar`}>
+            <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-16  flex justify-between items-center py-2  nav_bar`}>
                 <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" /></Link >
                 <ul className="flex justify-between items-center md:gap-8 xl:gap-16 ">
                     {
