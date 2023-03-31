@@ -150,7 +150,7 @@ export default function Home() {
       <main className="banner_bg_imges">
         <section className="banner_bgbler_imges">
           <div className="px-5 md:px-20 pt-[100px] md:pt-[166px] text-white">
-            <h1 className="text-4xl md:text-5xl font-bold ">Our aim is to<sapn className="text-[#FF6B00]">...</sapn></h1>
+            <h1 className="text-4xl md:text-5xl font-bold "><span className="text-[#FF6B00]">Our</span> aim is to<sapn>...</sapn></h1>
             <h2 className="my-[34px] font-semibold text-[#FF6B00]">{/* Tune your technology */}</h2>
             <p className="mb-[66px]">
               create intelligent, innovative, and sustainable technology solutions and <br /> services across multiple platforms, with a strong emphasis 

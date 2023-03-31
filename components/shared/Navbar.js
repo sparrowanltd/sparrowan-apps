@@ -6,7 +6,7 @@ import logo from '../../public/sparrowan-logo.png';
 import menu from '../../assets/menu.png';
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
-
+import { MdArrowDropDown } from "react-icons/md";
 export default function Navbar() {
     const { theme, setTheme } = useTheme('')
     const router = useRouter()
@@ -47,7 +47,150 @@ export default function Navbar() {
         },
         {
             name: 'Service',
-            link: '/service'
+            link: '/service',
+            menu: [
+                {
+
+                    menuName: 'Development',
+                    subMenu: [
+                        {
+                            subMenuName: "Web App Development",
+                        },
+                        {
+                            subMenuName: "Mobile App Development",
+                        },
+                        {
+                            subMenuName: "AEM Solutions",
+                        },
+                        {
+                            subMenuName: "Machine Learning & Artificial Intelligence",
+                        },
+                        {
+                            subMenuName: "Cloud Solution",
+                        },
+                        {
+                            subMenuName: "E-Commerce Solution",
+                        },
+                        {
+                            subMenuName: "Business Intelligence",
+                        },
+                        {
+                            subMenuName: "ERP",
+                        },
+                        {
+                            subMenuName: "E-Learning",
+                        },
+                        {
+                            subMenuName: "AR VR Solution",
+                        },
+                        {
+                            subMenuName: "SharePoint",
+                        },
+                        {
+                            subMenuName: "Blockchain Development",
+                        },
+                        {
+                            subMenuName: "Quality Assurance",
+                        },
+                        {
+                            subMenuName: "Research and Development",
+                        },
+                        {
+                            subMenuName: "Multimedia Content Development",
+                        },
+                        {
+                            subMenuName: "Automation & Simulation",
+                        }
+                    ]
+                },
+                {
+
+                    menuName: 'Digital Marketing',
+                    subMenu: [
+                        {
+                            subMenuName: "Paid Marketing Strategy",
+                        },
+                        {
+                            subMenuName: "Social Media Marketing",
+
+                        },
+                        {
+                            subMenuName: "Search Engine Optimization",
+
+                        },
+                        {
+                            subMenuName: "Pay Per Click Advertising",
+                        },
+                        {
+                            subMenuName: "Application Marketing",
+                        },
+                        {
+                            subMenuName: "Market Research",
+                        },
+                        {
+                            subMenuName: "Video Promotion",
+                        },
+                        {
+                            subMenuName: "Email Marketing",
+                        },
+                        {
+                            subMenuName: "SMS Marketing",
+                        },
+                        {
+                            subMenuName: "Influencer Marketing",
+                        },
+                        {
+                            subMenuName: "Lead Generation",
+                        },
+                        {
+                            subMenuName: "Content Marketing",
+                        },
+                        {
+                            subMenuName: "Affiliate Marketing",
+                        },
+                        {
+                            subMenuName: "Blogging",
+                        },
+                        {
+                            subMenuName: "Online Reputation Management",
+                        },
+                        {
+                            subMenuName: "Brand Uniformity",
+                        },
+                        {
+                            subMenuName: "Marketing Automation",
+                        },
+                    ]
+                },
+                {
+
+                    menuName: 'Consulting',
+                    subMenu: [
+                        {
+                            subMenuName: "Brand Strategy",
+                        },
+                        {
+                            subMenuName: "Product Strategy",
+                        },
+                        {
+                            subMenuName: "Growth & Innovation Strategy",
+                        },
+                        {
+                            subMenuName: "Competitive Audits",
+                        },
+                        {
+                            subMenuName: "Trendspotting Consulting",
+                        },
+                        {
+                            subMenuName: "Web Security",
+                        },
+                        {
+                            subMenuName: "Ecommerce",
+                        },
+                    ]
+                }
+            ]
+
         },
         {
             name: 'Projects',
@@ -63,9 +206,30 @@ export default function Navbar() {
         },
 
     ]
+    const [menubersdf, setsdf] = useState([])
+    console.log(menubersdf)
 
-    const navContent = navLink?.map(({ name, link }) => (
-        <Link key={link} href={link} className={`${router?.asPath === link ? "text-[#FF6B00]" : ""}`}>{name}</Link >
+    const navContent = navLink?.map(({ name, link, menu }) => (
+        <li>
+            <div className="flex items-center gap-2">
+                <Link key={link} href={link} className={`${router?.asPath === link ? "text-[#FF6B00]" : ""}`}>
+                    {name}
+                </Link >
+                {/* {link == '/service' && <MdArrowDropDown onClick={() => setsdf(menu)} />} */}
+            </div>
+            {/* {menu && <ul className="">
+                {
+                    menu?.map((menu,index) => (
+                        <div className="flex items-center gap-2">
+                            <Link key={index} href='/' >{menu?.menuName}</Link >
+                        </div>
+                    ))
+                }
+
+            </ul>} */}
+
+
+        </li>
     ))
 
 
@@ -87,6 +251,7 @@ export default function Navbar() {
                 </div>
             </header>
             {/* {theme === "light" && <hr />} */}
+
             {/* moble  navbar  */}
             <header className="mobile_navbar">
 

@@ -10,6 +10,9 @@ import Group5 from '../../assets/Group5.png';
 import Line from '../../assets/Line2.png';
 
 export default function Footer() {
+    var currentTime = new Date()
+
+    var year = currentTime.getFullYear()
     return (
         <>
             <footer
@@ -23,7 +26,7 @@ export default function Footer() {
                                 <Link href='/'> <Image src={logo} className="w-100" width="" height="" alt="Logo"  /></Link >
                             </h1>
                             <div className="">
-                                <p
+                               {/*  <p
                                     className="  text-[#FF6B00]    font-semibold ">
                                     USA
                                 </p>
@@ -38,7 +41,7 @@ export default function Footer() {
                                     UK Office
                                 </p>
                                 <p className="mb-2 text-sm">275 New N Rd Ste 3087, <br />London N1 7AA</p>
-                                <p className="mb-4 text-sm  ">+44 (204) 5577-0819</p>
+                                <p className="mb-4 text-sm  ">+44 (204) 5577-0819</p> */}
                                 <p
                                     className="mb-2  text-[#FF6B00]  font-semibold ">
                                     Dhaka Office
@@ -62,7 +65,7 @@ export default function Footer() {
                                 </p>
                                 <p className="mb-4">
                                     <Link href="#" 
-                                    >  Our Stores </Link >
+                                    >  Our story </Link >
                                 </p>
                                 <p className="mb-4">
                                     <Link href="#" 
@@ -149,7 +152,7 @@ export default function Footer() {
                     {/*  */}
                     <hr className="my-6" />
                     <div className="md:flex justify-between items-center ">
-                        <p className="text-sm">© 2022 – Sparrowan LLC | All Rights Reserved | Serving clients since 2019
+                        <p className="text-sm">© {year} – Sparrowan LLC | All Rights Reserved | Serving clients since 2019
                         <br />
                             Terms of Service | Privacy Policy
                         </p>
