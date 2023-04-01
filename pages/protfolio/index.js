@@ -9,6 +9,7 @@ import ProtfolioSeeCard from "@/components/shared/ProtfolioSeeCard";
 import Image from "next/image";
 import TeamSkeleton from "@/utils/skeleton/TeamSkeleton";
 import FounderSwiter from "@/components/shared/FounderSwiter";
+import Founder from "@/utils/pages/protfolio/founder";
 export default function Protfolio() {
     return (
         <>
@@ -55,8 +56,10 @@ export default function Protfolio() {
                     </div>
                 </div>
                 {/* ============== Our FounderSwiter ==============  */}
-                <div className="w-100 h-[750px] p-5 md:p-10 lg:p-20 overflow-hidden">
-                    <FounderSwiter />
+
+                <div className=" p-5 md:p-10 lg:p-20 overflow-hidden">
+                    {/*   <FounderSwiter /> */}
+                    <Founder/>
                 </div>
                 {/* ============== Our support ==============  */}
                 <div className="mt-10 ">
