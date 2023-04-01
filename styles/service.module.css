@@ -1,21 +1,63 @@
 /* service card styles  */
-.service_card{
+.serviceBanner {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: -1;
+    background-color: rgba(252, 247, 247, 0.466);
+}
+
+.servicebg {
+    width: 400px;
+    height: 400px;
+    background: #FFDDC5;
+    border-radius: 100%;
+    position: absolute;
+    top: -170px;
+    z-index: -1;
+    left: -170px;
+}
+
+.service_card {
     min-width: 300px;
     height: 239px;
     background: linear-gradient(90deg, #FF6B00 0%, rgba(255, 0, 46, 0.75) 100%);
     border-radius: 10px;
 }
-.text_positon{
-    height: 210px;
-    overflow: hidden;
+
+.text_positon {
+    margin-top: 10px;
 }
-.more{
+
+.more {
     color: #FF6B00;
 }
 
 @media only screen and (max-width: 568px) {
-    .main_service_card{
-       display: flex;
-       flex-direction: column;
+    .main_service_card {
+        display: flex;
+        flex-direction: column;
+
     }
+}
+
+/* =================  ServiceItemsBanner =================  */
+.serviceItemsBanner {
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/contactus.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serviceItemsBannerblear {
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
 }

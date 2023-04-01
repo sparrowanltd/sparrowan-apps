@@ -22,12 +22,14 @@ export default function DegitalMarketing() {
                 {/* div pagination  */}
                 <div className="text-center w-[252px] bg-[#FF6B00] rounded-md font-bold mx-auto mt-10">
                     <div className="flex justify-between items-center px-3 py-2">
-                        <button  onClick={() => setPagination(pagination + 1)} >
+                        <button onClick={() => setPagination(pagination - 1)} disabled={pagination >= 2 ? false : true}>
                             <Image src={prev} width={20} height={20} alt="imges" />
                         </button>
                         <h1 className="text-white" >{pagination}</h1>
-                        <button onClick={() => setPagination(pagination - 1)} disabled={pagination >=2?false:true}>
-                            <Image  src={prev} width={20} height={20} alt="imges" />
+                        <button onClick={() => setPagination(pagination + 1)} >
+                            <div className="rotate-180">
+                                <Image src={prev} width={20} height={20} alt="imges" />
+                            </div>
                         </button>
                     </div>
 

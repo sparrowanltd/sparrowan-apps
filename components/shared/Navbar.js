@@ -223,7 +223,7 @@ export default function Navbar() {
     return (
         <>
             {/* laptop adn  pc mobile_navbar */}
-            <header className={`dark:bg-[#121212] pc_navbar  px-5 md:px-16  flex justify-between items-center py-2  nav_bar`}>
+            <header className={`bg-white dark:bg-[#121212] pc_navbar shadow-sm  px-5 md:px-16  flex justify-between items-center py-2  nav_bar`}>
                 <Link href='/'> <Image src={logo} width="129px" height="53px" alt="Logo" /></Link >
                 <ul className="flex justify-between items-center md:gap-8 xl:gap-16 ">
                     {
@@ -231,7 +231,7 @@ export default function Navbar() {
                     }
                 </ul>
                 <div className="flex items-center gap-10">
-                    {darkMode}
+                   {/*  {darkMode} */}
                     <Link href='/contact' className="bg-[#FF6B00] px-5 rounded text-white ">Contact us</Link >
                 </div>
             </header>
@@ -255,7 +255,7 @@ export default function Navbar() {
                                 {
                                     navContent
                                 }
-                                {darkMode}
+                               {/*  {darkMode} */}
                                 <Link href='/contact' className="bg-[#FF6B00] px-5 py-1 rounded text-white ">Contact us</Link >
                             </ul>
 

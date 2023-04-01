@@ -26,29 +26,41 @@ export default function Footer() {
                                 <Link href='/'> <Image src={logo} className="w-100" width="" height="" alt="Logo" /></Link >
                             </h1>
                             <div className="">
-                                {/*  <p
-                                    className="  text-[#FF6B00]    font-semibold ">
-                                    USA
-                                </p>
-                                <br />
-                                <p
-                                    className="mb-4  font-semibold ">
-                                    +1 (954) 449-5289
+                                <div className="mb-4 text-sm ">
+                                    <p
+                                        className="mb-2  text-[#FF6B00]  font-semibold ">
+                                        Bangladesh Office
+                                    </p>
+                                    <p
+                                        className="mb-2  text-sm font-bold ">
+                                        Registered Off:
+                                    </p>
+                                    <p className="mb-2 text-sm  ">House # 193, Road # 2, Avenue # 3,<br />Mirpur DOHS, Dhaka - 1216</p>
+                                    <p className="mb-4 text-sm ">+880 (17) 1555-9868</p>
+                                    <p
+                                        className="mb-2   text-sm  font-bold ">
+                                        City Off:
 
-                                </p>
-                                 */}
+                                    </p>
+                                    <p className="mb-2 text-sm  ">5 Sujatnagar, Pallabi, Dhaka - 1216</p>
+                                    <p className=" text-sm ">+880 (19) 6278-0789</p>
+
+
+
+                                </div>
+
+
+
+
+
+
                                 <p
                                     className="mb-2  text-[#FF6B00]  font-semibold ">
                                     Japan Office
                                 </p>
                                 <p className="mb-2 text-sm">3-21-2Naka-ward, <br /> Yokohama-city, Kanagawa-prefecture, japan</p>
                                 <p className="mb-4 text-sm  ">+81 (045) 222-3232</p>
-                                <p
-                                    className="mb-2  text-[#FF6B00]  font-semibold ">
-                                    Dhaka Office
-                                </p>
-                                <p className="mb-2 text-sm  ">House # 193, Road # 2, Avenue # 3, <br />Mirpur, Dohs, Dhaka - 1216</p>
-                                <p className="mb-4 text-sm ">+880 (17) 1555-9868</p>
+
 
                             </div>
                         </div>
@@ -153,7 +165,7 @@ export default function Footer() {
                     {/*  */}
                     <hr className="my-6" />
                     <div className="md:flex justify-between items-center ">
-                        <p className="text-sm">© {year} – Sparrowan Limited | All Rights Reserved
+                        <p className="text-sm">© {year} Sparrowan Limited | All Rights Reserved
                             <br />
                             Terms of Services I Privacy Policy I Disclaimer
                         </p>
