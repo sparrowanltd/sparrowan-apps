@@ -73,43 +73,43 @@ export default function Footer() {
 
                             <div className="mt-8">
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/about"
                                     >About us</Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/ourStory"
                                     >  Our story </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/blog"
                                     > Blog  </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="contact"
                                     >  Contact </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/support"
                                     >  Support </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/payments"
                                     > Payments  </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/career"
                                     >  Career </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="news"
                                     >  News </Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="/foundation"
                                     > Foundation</Link >
                                 </p>
                                 <p className="mb-4">
-                                    <Link href="#"
+                                    <Link href="siteMap"
                                     >Site Map</Link >
                                 </p>
                             </div>
@@ -167,7 +167,8 @@ export default function Footer() {
                     <div className="md:flex justify-between items-center ">
                         <p className="text-sm">© {year} Sparrowan Limited | All Rights Reserved
                             <br />
-                            Terms of Services I Privacy Policy I Disclaimer
+                            <Link href='/termsofServices'>Terms of Services</Link> I
+                            <Link href='/pricacyPolicy'>Privacy Policy</Link> <Link href='/disclaimer'>Disclaimer</Link>
                         </p>
                         <ul className="mt-10 md:mt-10 flex justify-between items-center gap-2 md:gap-5  ">
                             <li className="bg-black p-1 rounded-lg"><Link href='/'> <Image src={Group1} width="30px" height="auto" alt="Logo" /></Link ></li>

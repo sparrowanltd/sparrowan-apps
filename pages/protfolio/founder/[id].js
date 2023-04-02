@@ -3,7 +3,7 @@ import styles from '../../../styles/founderSwiter.module.css'
 import shawon from '../../../assets/shawon.png'
 import kobir from '../../../assets/kobir.png'
 import talha from '../../../assets/talha.png'
-import raza from '../../../assets/raza.png'
+import raza from '../../../assets/raza.jpg'
 import solaiman from '../../../assets/solaiman.png'
 import shamim from '../../../assets/shamim.png'
 import Image from "next/image";
@@ -72,6 +72,7 @@ export default function SingleFounder() {
             position: "Director, Finance at Sparrowan Limited",
             discretion: "Khanduker Noore Shamim Siddique, Director, Finance at Sparrowan Limited, highlights his extensive experience in finance and accounting, and his ability to drive financial growth and sustainability for companies. As the Director Finance, he oversees all aspects of the company's financial operations and ensures that they are aligned with the company's strategic goals and objectives. He is skilled in financial modeling and analysis, and uses data-driven insights to make strategic decisions that support the company's growth and profitability. Khanduker Noore Shamim Siddique has overseen several successful financial initiatives and works closely with the team to implement best practices for financial management. His management style is collaborative and results-oriented, and he is committed to fostering a culture of transparency and open communication.",
             images: shamim,
+            contact: "shamim@sparrowan.com",
         },
         {
             id: 6,
@@ -89,7 +90,7 @@ export default function SingleFounder() {
             <main className={styles.swiperslide}>
                 <section className={`w-[80%] mx-auto  p-10 rounded-xl ${styles.profileshadow}`}>
                     <div className="flex justify-start items-start gap-10">
-                        <div data-aos="fade-right" className={`w-[300px] h-fit rounded-xl shadow-[15px_rgba(0,0,0,0.3) ]`}>
+                        <div data-aos="fade-right" className={`w-[200px] h-fit rounded-xl shadow-[15px_rgba(0,0,0,0.3) ]`}>
                             <Image className="object-fill h-48 w-96  rounded-xl" src={currentUser?.images} width={100} height={100} priority alt="Images" />
                         </div>
                         <div data-aos="fade-left">

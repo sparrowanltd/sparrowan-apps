@@ -5,7 +5,7 @@ import { AiFillTwitterCircle, AiOutlineMail, AiFillStar } from "react-icons/ai";
 import shawon from '../../../assets/shawon.png'
 import kobir from '../../../assets/kobir.png'
 import talha from '../../../assets/talha.png'
-import raza from '../../../assets/raza.png'
+import raza from '../../../assets/raza.jpg'
 import solaiman from '../../../assets/solaiman.png'
 import shamim from '../../../assets/shamim.png'
 import Link from "next/link";

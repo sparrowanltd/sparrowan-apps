@@ -22,7 +22,7 @@ export default function Career() {
                 </section>
                 {/* job post   */}
                 <div className="w-100 flex justify-center items-center h-[400px]">
-                    <h1 className="text-5xl font-bold text-center"> Not Found</h1>
+                    <h1 className="text-5xl font-bold text-center"> No Vacancy</h1>
                 </div>
             </main>
 
